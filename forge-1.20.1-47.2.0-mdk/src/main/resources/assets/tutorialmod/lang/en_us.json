@@ -1,0 +1,11 @@
+{
+  "item.tutorialmod.ruby": "Ruby",
+  "item.tutorialmod.raw_ruby": "Raw Ruby",
+  "item.tutorialmod.deus_ex_machina": "Deus Ex Machina",
+  "item.tutorialmod.metal_detector": "Metal Detector",
+
+  "block.tutorialmod.ruby_block": "Block of Ruby",
+  "block.tutorialmod.raw_ruby_block": "Block of Raw_Ruby",
+
+  "creativetab.tutorial_tab": "ruby tutorial Tab"
+}

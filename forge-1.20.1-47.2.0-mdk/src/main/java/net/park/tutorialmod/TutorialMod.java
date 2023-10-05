@@ -15,6 +15,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.park.tutorialmod.block.ModBlocks;
+import net.park.tutorialmod.items.ModCreativeModTabs;
+import net.park.tutorialmod.items.ModeItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -29,7 +32,15 @@ public class TutorialMod
 
     public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+
+        ModCreativeModTabs.register(modEventBus);
+
+        ModeItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
 
@@ -41,7 +52,10 @@ public class TutorialMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey()==CreativeModeTabs.INGREDIENTS){
+            event.accept(ModeItems.RUBY);
+            event.accept(ModeItems.RAW_RUBY);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
