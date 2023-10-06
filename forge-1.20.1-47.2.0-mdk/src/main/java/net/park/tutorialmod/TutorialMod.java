@@ -55,6 +55,7 @@ public class TutorialMod
         if(event.getTabKey()==CreativeModeTabs.INGREDIENTS){
             event.accept(ModeItems.RUBY);
             event.accept(ModeItems.RAW_RUBY);
+            event.accept(ModeItems.IRON_STICK);
         }
     }
 

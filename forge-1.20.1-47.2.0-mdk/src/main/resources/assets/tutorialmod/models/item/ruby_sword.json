@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "tutorialmod:item/ruby_sword_0",
+    "layer1": "tutorialmod:item/ruby_sword"
+  }
+}

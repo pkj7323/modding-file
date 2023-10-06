@@ -1,0 +1,10 @@
+{
+  "values": [
+    "tutorialmod:ruby_block",
+    "tutorialmod:raw_ruby_block",
+    "tutorialmod:ruby_ore",
+    "tutorialmod:nether_ruby_ore",
+    "tutorialmod:ender_ruby_ore",
+    "tutorialmod:deepslate_ruby_ore"
+  ]
+}

@@ -9,11 +9,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutorialmod:ruby_block"
+          "name": "tutorialmod:raw_ruby_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "tutorialmod:block/ruby_block"
+  "random_sequence": "tutorialmod:block/raw_ruby_block"
 }

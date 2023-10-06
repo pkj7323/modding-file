@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tutorialmod:block/ender_ruby_ore"
+  }
+}

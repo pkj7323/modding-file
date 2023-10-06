@@ -1,11 +1,18 @@
 {
   "item.tutorialmod.ruby": "Ruby",
   "item.tutorialmod.raw_ruby": "Raw Ruby",
+  "item.tutorialmod.iron_stick": "iron stick",
+
   "item.tutorialmod.deus_ex_machina": "Deus Ex Machina",
   "item.tutorialmod.metal_detector": "Metal Detector",
+  "item.tutorialmod.ruby_sword": "ruby sword",
 
   "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.raw_ruby_block": "Block of Raw_Ruby",
+  "block.tutorialmod.ruby_ore": "ruby ore",
+  "block.tutorialmod.ender_ruby_ore": "ender ruby ore",
+  "block.tutorialmod.deepslate_ruby_ore": "deepslate ruby ore",
+  "block.tutorialmod.nether_ruby_ore": "nether ruby ore",
 
   "creativetab.tutorial_tab": "ruby tutorial Tab"
 }

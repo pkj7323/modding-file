@@ -20,19 +20,24 @@ public class ModeItems {
             ()->new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_RUBY=ITEMS.register("raw_ruby",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IRON_STICK=ITEMS.register("iron_stick",
+            ()-> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> METAL_DETECTOR=ITEMS.register("metal_detector",
             ()-> new MeralDetectoritem(new Item.Properties().durability(100)));
 
     public static final RegistryObject<SwordItem> DEUS_EX_MACHINA=ITEMS.register("deus_ex_machina",
-            ()-> new SwordItem(Tiers.Example,1000,3.5f,
+            ()-> new SwordItem(Tiers.five,1000,3.5f,
+                    new Item.Properties()));
+    public static final RegistryObject<SwordItem> RUBY_SWORD=ITEMS.register("ruby_sword",
+            ()-> new SwordItem(Tiers.five,5,0.5f,
                     new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
     public static class Tiers{
-        public static final Tier Example=new ForgeTier(5,3000,3.5f,
+        public static final Tier five=new ForgeTier(5,3000,3.5f,
                 1,350,null,()-> Ingredient.EMPTY);
     }
 

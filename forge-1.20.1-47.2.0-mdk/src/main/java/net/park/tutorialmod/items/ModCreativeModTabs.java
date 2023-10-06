@@ -23,10 +23,17 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModeItems.RUBY.get());
                         pOutput.accept(ModeItems.RAW_RUBY.get());
+                        pOutput.accept(ModeItems.IRON_STICK.get());
+
                         pOutput.accept(ModeItems.DEUS_EX_MACHINA.get());
                         pOutput.accept(ModeItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModeItems.RUBY_SWORD.get());
 
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
+                        pOutput.accept(ModBlocks.RUBY_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
+                        pOutput.accept(ModBlocks.ENDER_RUBY_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_RUBY_ORE.get());
                         pOutput.accept(ModBlocks.RAW_RUBY_BLOCK.get());
                     })
                     .build());
