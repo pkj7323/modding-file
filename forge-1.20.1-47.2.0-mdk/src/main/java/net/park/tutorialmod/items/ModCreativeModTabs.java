@@ -28,6 +28,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.DEUS_EX_MACHINA.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.RUBY_SWORD.get());
+                        pOutput.accept(ModItems.RUBY_PICKAXE.get());
+                        pOutput.accept(ModItems.RUBY_AXE.get());
+                        pOutput.accept(ModItems.RUBY_SHOVEL.get());
+                        pOutput.accept(ModItems.RUBY_HOE.get());
 
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_ORE.get());

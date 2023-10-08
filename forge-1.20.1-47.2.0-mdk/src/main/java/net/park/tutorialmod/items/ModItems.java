@@ -1,8 +1,6 @@
 package net.park.tutorialmod.items;
 
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,20 +31,30 @@ public class ModItems {
     public static final RegistryObject<Item> METAL_DETECTOR=ITEMS.register("metal_detector",
             ()-> new MetalDetectoritem(new Item.Properties().durability(100)));
 
-    public static final RegistryObject<SwordItem> DEUS_EX_MACHINA=ITEMS.register("deus_ex_machina",
-            ()-> new SwordItem(Tiers.five,1000,3.5f,
-                    new Item.Properties()));
-    public static final RegistryObject<SwordItem> RUBY_SWORD=ITEMS.register("ruby_sword",
-            ()-> new SwordItem(Tiers.five,5,0.5f,
-                    new Item.Properties()));
+    public static final RegistryObject<Item> DEUS_EX_MACHINA=ITEMS.register("deus_ex_machina",
+            ()-> new SwordItem(ModToolTiers.GOD,1000,3.5f,
+                    new SwordItem.Properties().fireResistant().setNoRepair()));
+    public static final RegistryObject<Item> RUBY_SWORD=ITEMS.register("ruby_sword",
+            ()-> new SwordItem(ModToolTiers.RUBY,8,2,
+                    new SwordItem.Properties()));
+    public static final RegistryObject<Item> RUBY_PICKAXE=ITEMS.register("ruby_pickaxe",
+            ()-> new PickaxeItem(ModToolTiers.RUBY,2,2,
+                    new SwordItem.Properties()));
+    public static final RegistryObject<Item> RUBY_AXE=ITEMS.register("ruby_axe",
+            ()-> new AxeItem(ModToolTiers.RUBY,7,0.5f,
+                    new SwordItem.Properties()));
+    public static final RegistryObject<Item> RUBY_SHOVEL=ITEMS.register("ruby_shovel",
+            ()-> new ShovelItem(ModToolTiers.RUBY,1,0,
+                    new SwordItem.Properties()));
+    public static final RegistryObject<Item> RUBY_HOE=ITEMS.register("ruby_hoe",
+            ()-> new HoeItem(ModToolTiers.RUBY,0,0,
+                    new SwordItem.Properties()));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
-    public static class Tiers{
-        public static final Tier five=new ForgeTier(5,3000,3.5f,
-                1,350,null,()-> Ingredient.EMPTY);
-    }
+
 
 }
 
