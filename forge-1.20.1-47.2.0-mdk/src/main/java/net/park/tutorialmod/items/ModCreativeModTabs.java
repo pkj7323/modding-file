@@ -18,16 +18,16 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TutorialMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> TUTORIAL_TAB=CREATIVE_MODE_TABS.register("tutorial_tabs",
-            ()->CreativeModeTab.builder().icon(()->new ItemStack(ModeItems.RUBY.get()))
+            ()->CreativeModeTab.builder().icon(()->new ItemStack(ModItems.RUBY.get()))
                     .title(Component.translatable("creativetab.tutorial_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModeItems.RUBY.get());
-                        pOutput.accept(ModeItems.RAW_RUBY.get());
-                        pOutput.accept(ModeItems.IRON_STICK.get());
+                        pOutput.accept(ModItems.RUBY.get());
+                        pOutput.accept(ModItems.RAW_RUBY.get());
+                        pOutput.accept(ModItems.IRON_STICK.get());
 
-                        pOutput.accept(ModeItems.DEUS_EX_MACHINA.get());
-                        pOutput.accept(ModeItems.METAL_DETECTOR.get());
-                        pOutput.accept(ModeItems.RUBY_SWORD.get());
+                        pOutput.accept(ModItems.DEUS_EX_MACHINA.get());
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.RUBY_SWORD.get());
 
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_ORE.get());
@@ -35,6 +35,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.ENDER_RUBY_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_RUBY_ORE.get());
                         pOutput.accept(ModBlocks.RAW_RUBY_BLOCK.get());
+
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+
+                        pOutput.accept(ModItems.STRAWBERRY.get());
+                        pOutput.accept(ModItems.PINE_CONE.get());
                     })
                     .build());
 

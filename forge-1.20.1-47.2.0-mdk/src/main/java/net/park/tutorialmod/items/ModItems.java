@@ -10,9 +10,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
-import net.park.tutorialmod.items.custom.MeralDetectoritem;
+import net.park.tutorialmod.items.custom.FuelItem;
+import net.park.tutorialmod.items.custom.MetalDetectoritem;
 
-public class ModeItems {
+public class ModItems {
     public static final DeferredRegister<Item> ITEMS=
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
@@ -23,8 +24,14 @@ public class ModeItems {
     public static final RegistryObject<Item> IRON_STICK=ITEMS.register("iron_stick",
             ()-> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> STRAWBERRY=ITEMS.register("strawberry",
+            ()-> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+
+    public static final RegistryObject<Item> PINE_CONE=ITEMS.register("pine_cone",
+            ()-> new FuelItem(new Item.Properties(),400));
+
     public static final RegistryObject<Item> METAL_DETECTOR=ITEMS.register("metal_detector",
-            ()-> new MeralDetectoritem(new Item.Properties().durability(100)));
+            ()-> new MetalDetectoritem(new Item.Properties().durability(100)));
 
     public static final RegistryObject<SwordItem> DEUS_EX_MACHINA=ITEMS.register("deus_ex_machina",
             ()-> new SwordItem(Tiers.five,1000,3.5f,

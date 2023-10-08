@@ -5,6 +5,7 @@
 
   "item.tutorialmod.deus_ex_machina": "Deus Ex Machina",
   "item.tutorialmod.metal_detector": "Metal Detector",
+  "tootips.tutorialmod.metal_detector.tooltip": "Finds valuablee underground!",
   "item.tutorialmod.ruby_sword": "ruby sword",
 
   "block.tutorialmod.ruby_block": "Block of Ruby",
@@ -13,6 +14,11 @@
   "block.tutorialmod.ender_ruby_ore": "ender ruby ore",
   "block.tutorialmod.deepslate_ruby_ore": "deepslate ruby ore",
   "block.tutorialmod.nether_ruby_ore": "nether ruby ore",
+  "block.tutorialmod.sound_block": "custom sound block",
+
+  "item.tutorialmod.strawberry": "strawberry",
+
+  "item.tutorialmod.pine_cone": "pine_cone",
 
   "creativetab.tutorial_tab": "ruby tutorial Tab"
 }

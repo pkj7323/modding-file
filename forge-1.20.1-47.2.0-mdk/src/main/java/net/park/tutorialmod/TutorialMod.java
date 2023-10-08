@@ -17,7 +17,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.ModCreativeModTabs;
-import net.park.tutorialmod.items.ModeItems;
+import net.park.tutorialmod.items.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -36,7 +36,7 @@ public class TutorialMod
 
         ModCreativeModTabs.register(modEventBus);
 
-        ModeItems.register(modEventBus);
+        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -53,9 +53,9 @@ public class TutorialMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey()==CreativeModeTabs.INGREDIENTS){
-            event.accept(ModeItems.RUBY);
-            event.accept(ModeItems.RAW_RUBY);
-            event.accept(ModeItems.IRON_STICK);
+            event.accept(ModItems.RUBY);
+            event.accept(ModItems.RAW_RUBY);
+            event.accept(ModItems.IRON_STICK);
         }
     }
 
