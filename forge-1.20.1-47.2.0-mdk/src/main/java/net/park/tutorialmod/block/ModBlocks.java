@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
+import net.park.tutorialmod.block.custom.SoundBlock;
 import net.park.tutorialmod.items.ModItems;
 
 import java.util.function.Supplier;
@@ -24,7 +25,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> RUBY_BLOCK=registerBlock("ruby_block",
             ()->new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SOUND_BLOCK=registerBlock("sound_block",
-            ()->new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            ()->new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> RAW_RUBY_BLOCK=registerBlock("raw_ruby_block",
             ()->new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 

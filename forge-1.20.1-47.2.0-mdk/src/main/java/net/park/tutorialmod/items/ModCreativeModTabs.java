@@ -33,6 +33,14 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY_SHOVEL.get());
                         pOutput.accept(ModItems.RUBY_HOE.get());
 
+                        pOutput.accept(ModItems.RUBY_HELMET.get());
+                        pOutput.accept(ModItems.RUBY_CHESTPLATE.get());
+                        pOutput.accept(ModItems.RUBY_LEGGINGS.get());
+                        pOutput.accept(ModItems.RUBY_BOOTS.get());
+
+
+
+
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
