@@ -31,5 +31,9 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
         add("metal_detector_from_jungle_temple",new AddItemModifier(new LootItemCondition[]{
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build()},
                 ModItems.METAL_DETECTOR.get()));
+
+        add("metal_detector_from_suspicious_sand",new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("archeaology/desert_pyramid")).build()},
+                ModItems.METAL_DETECTOR.get()));
     }
 }
