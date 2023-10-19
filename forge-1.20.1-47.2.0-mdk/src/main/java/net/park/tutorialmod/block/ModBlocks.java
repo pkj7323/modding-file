@@ -14,6 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.custom.SoundBlock;
+import net.park.tutorialmod.block.custom.StrawberryCropBlock;
 import net.park.tutorialmod.items.ModItems;
 
 import java.util.function.Supplier;
@@ -41,6 +42,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> NETHER_RUBY_ORE=registerBlock("nether_ruby_ore",
             ()->new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3,6)));
+
+    public static final RegistryObject<Block> STRAWBERRY_CROP=BLOCKS.register("strawberry_crop",
+            ()->new StrawberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
 
 
 

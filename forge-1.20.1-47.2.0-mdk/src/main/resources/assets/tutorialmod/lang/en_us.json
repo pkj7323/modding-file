@@ -13,10 +13,13 @@
   "item.tutorialmod.ruby_axe": "ruby axe",
 
 
-  "item.tutorialmod.ruby_helmet": "ruby helmet",
-  "item.tutorialmod.ruby_chestplate": "ruby chestplate",
-  "item.tutorialmod.ruby_leggings": "ruby leggings",
-  "item.tutorialmod.ruby_boots": "ruby boots",
+  "item.tutorialmod.ruby_helmet": "Ruby helmet",
+  "item.tutorialmod.ruby_chestplate": "Ruby chestplate",
+  "item.tutorialmod.ruby_leggings": "Ruby leggings",
+  "item.tutorialmod.ruby_boots": "Ruby boots",
+
+  "item.tutorialmod.strawberry_seeds": "Strawberry seeds",
+
 
   "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.raw_ruby_block": "Block of Raw_Ruby",

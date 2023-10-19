@@ -44,9 +44,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_RUBY);
         simpleItem(ModItems.RUBY);
 
+        simpleItem(ModItems.STRAWBERRY_SEEDS);
+        simpleItem(ModItems.STRAWBERRY);
+
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.PINE_CONE);
-        simpleItem(ModItems.STRAWBERRY);
+
         simpleItem(ModItems.IRON_STICK);
 
         handheldItem(ModItems.RUBY_SWORD);

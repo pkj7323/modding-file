@@ -8,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
+import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.custom.FuelItem;
 import net.park.tutorialmod.items.custom.MetalDetectoritem;
 import net.park.tutorialmod.items.custom.ModArmoritem;
@@ -58,6 +59,9 @@ public class ModItems {
             ()-> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS,new Item.Properties()));
     public static final RegistryObject<Item> RUBY_BOOTS=ITEMS.register("ruby_boots",
             ()-> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS,new Item.Properties()));
+
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS=ITEMS.register("strawberry_seeds",
+            ()-> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(),new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

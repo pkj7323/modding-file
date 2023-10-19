@@ -39,7 +39,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY_BOOTS.get());
 
 
-
+                        pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
 
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_ORE.get());

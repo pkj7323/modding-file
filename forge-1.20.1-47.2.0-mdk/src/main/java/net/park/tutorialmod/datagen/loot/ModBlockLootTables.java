@@ -1,6 +1,7 @@
 package net.park.tutorialmod.datagen.loot;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -18,9 +19,12 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.block.ModBlocks;
+import net.park.tutorialmod.block.custom.StrawberryCropBlock;
 import net.park.tutorialmod.items.ModItems;
 
 import java.util.List;
@@ -46,8 +50,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.NETHER_RUBY_ORE.get(),
                 block->createCopperLikeOreDrops(ModBlocks.NETHER_RUBY_ORE.get(),ModItems.RAW_RUBY.get()));
 
-
-
+        LootItemCondition.Builder lootitrmcondition$builder= LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.STRAWBERRY_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE,5));
+        this.add(ModBlocks.STRAWBERRY_CROP.get(),createCropDrops(ModBlocks.STRAWBERRY_CROP.get(),ModItems.STRAWBERRY.get(),
+                ModItems.STRAWBERRY_SEEDS.get(),lootitrmcondition$builder));
 
 
     }
