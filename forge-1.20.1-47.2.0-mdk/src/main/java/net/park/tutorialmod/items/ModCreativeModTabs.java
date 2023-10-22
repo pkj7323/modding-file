@@ -39,7 +39,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY_BOOTS.get());
 
 
-                        pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
+
 
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_ORE.get());
@@ -51,6 +51,12 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
                         pOutput.accept(ModItems.STRAWBERRY.get());
+                        pOutput.accept(ModItems.CORN.get());
+
+
+                        pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
+                        pOutput.accept(ModItems.CORN_SEEDS.get());
+
                         pOutput.accept(ModItems.PINE_CONE.get());
                     })
                     .build());

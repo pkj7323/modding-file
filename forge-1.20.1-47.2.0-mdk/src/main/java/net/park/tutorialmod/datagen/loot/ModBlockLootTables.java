@@ -24,6 +24,7 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.block.ModBlocks;
+import net.park.tutorialmod.block.custom.CornCropBlock;
 import net.park.tutorialmod.block.custom.StrawberryCropBlock;
 import net.park.tutorialmod.items.ModItems;
 
@@ -55,6 +56,26 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StrawberryCropBlock.AGE,5));
         this.add(ModBlocks.STRAWBERRY_CROP.get(),createCropDrops(ModBlocks.STRAWBERRY_CROP.get(),ModItems.STRAWBERRY.get(),
                 ModItems.STRAWBERRY_SEEDS.get(),lootitrmcondition$builder));
+
+
+
+        LootItemCondition.Builder lootitrmcondition$builder2= LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE,7))
+                .or(LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE,8)));
+        /*LootItemCondition.Builder lootitrmcondition$builder2= LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE,8));*///밑둥을 캐도 아이템이 나오게 할경우
+
+
+        this.add(ModBlocks.CORN_CROP.get(),createCropDrops(ModBlocks.CORN_CROP.get(),ModItems.CORN.get(),
+                ModItems.CORN_SEEDS.get(),lootitrmcondition$builder2));
+
+
+
+
 
 
     }

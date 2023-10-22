@@ -11,6 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
+import net.park.tutorialmod.block.custom.CornCropBlock;
 import net.park.tutorialmod.block.custom.StrawberryCropBlock;
 
 import java.util.function.Function;
@@ -36,6 +37,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SOUND_BLOCK);
 
         makeStrawberryCrop((CropBlock) ModBlocks.STRAWBERRY_CROP.get(),"strawberry_stage","strawberry_stage");
+        makeCornCorp(((CropBlock) ModBlocks.CORN_CROP.get()),"corn_stage_","corn_stage_");
 
     }
     public void makeStrawberryCrop(CropBlock block,String modelName,String textureName){
@@ -47,6 +49,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((StrawberryCropBlock) block).getAgeProperty()),
                 new ResourceLocation(TutorialMod.MOD_ID, "block/" + textureName + state.getValue(((StrawberryCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+    public void makeCornCorp(CropBlock block,String modelName,String textureName){
+        Function<BlockState,ConfiguredModel[]> function = state -> cornStates(state,block,modelName,textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+    private ConfiguredModel[] cornStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((CornCropBlock) block).getAgeProperty()),
+                new ResourceLocation(TutorialMod.MOD_ID, "block/" + textureName + state.getValue(((CornCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }
