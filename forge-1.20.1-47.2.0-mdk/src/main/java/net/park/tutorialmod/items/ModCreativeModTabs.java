@@ -58,6 +58,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.CORN_SEEDS.get());
 
                         pOutput.accept(ModItems.PINE_CONE.get());
+
+                        pOutput.accept(ModBlocks.CATMINT.get());
                     })
                     .build());
 

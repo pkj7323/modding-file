@@ -41,6 +41,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RUBY_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_RUBY_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
+        this.dropSelf(ModBlocks.CATMINT.get());
+
+
+        this.add(ModBlocks.POTTED_CATMINT.get(),createPotFlowerItemTable(ModBlocks.CATMINT.get()));
+
 
         this.add(ModBlocks.RUBY_ORE.get(),
                 block->createCopperLikeOreDrops(ModBlocks.RUBY_ORE.get(),ModItems.RAW_RUBY.get()));
@@ -68,7 +73,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         /*LootItemCondition.Builder lootitrmcondition$builder2= LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.CORN_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCropBlock.AGE,8));*///밑둥을 캐도 아이템이 나오게 할경우
-
 
         this.add(ModBlocks.CORN_CROP.get(),createCropDrops(ModBlocks.CORN_CROP.get(),ModItems.CORN.get(),
                 ModItems.CORN_SEEDS.get(),lootitrmcondition$builder2));

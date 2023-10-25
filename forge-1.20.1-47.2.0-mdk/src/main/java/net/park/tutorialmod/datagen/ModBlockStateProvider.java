@@ -39,6 +39,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         makeStrawberryCrop((CropBlock) ModBlocks.STRAWBERRY_CROP.get(),"strawberry_stage","strawberry_stage");
         makeCornCorp(((CropBlock) ModBlocks.CORN_CROP.get()),"corn_stage_","corn_stage_");
 
+
+        simpleBlockWithItem(ModBlocks.CATMINT.get(),models().cross(blockTexture(ModBlocks.CATMINT.get()).getPath(),
+                blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
+
+        simpleBlockWithItem(ModBlocks.POTTED_CATMINT.get(), models().singleTexture("potted_catmint", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
+
     }
     public void makeStrawberryCrop(CropBlock block,String modelName,String textureName){
         Function<BlockState, ConfiguredModel[]> function = state -> strawberryStates(state,block,modelName,textureName);

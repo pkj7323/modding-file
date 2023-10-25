@@ -30,10 +30,17 @@
   "block.tutorialmod.deepslate_ruby_ore": "deepslate ruby ore",
   "block.tutorialmod.nether_ruby_ore": "nether ruby ore",
   "block.tutorialmod.sound_block": "custom sound block",
+  "block.tutorialmod.catmint": "Catmint",
+
+
+
+
 
   "item.tutorialmod.strawberry": "strawberry",
 
   "item.tutorialmod.pine_cone": "pine_cone",
 
   "creativetab.tutorial_tab": "ruby tutorial Tab"
+
+
 }
