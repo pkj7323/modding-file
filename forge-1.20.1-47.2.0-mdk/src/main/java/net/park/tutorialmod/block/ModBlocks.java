@@ -15,6 +15,7 @@ import net.park.tutorialmod.block.custom.CornCropBlock;
 import net.park.tutorialmod.block.custom.SoundBlock;
 import net.park.tutorialmod.block.custom.StrawberryCropBlock;
 import net.park.tutorialmod.items.ModItems;
+import net.park.tutorialmod.sound.ModSounds;
 
 import java.util.function.Supplier;
 
@@ -25,7 +26,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> RUBY_BLOCK=registerBlock("ruby_block",
             ()->new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SOUND_BLOCK=registerBlock("sound_block",
-            ()->new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            ()->new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(ModSounds.SOUND_BLOCK_SOUNDS)));
     public static final RegistryObject<Block> RAW_RUBY_BLOCK=registerBlock("raw_ruby_block",
             ()->new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 

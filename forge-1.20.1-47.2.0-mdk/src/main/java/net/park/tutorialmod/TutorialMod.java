@@ -20,6 +20,7 @@ import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.ModCreativeModTabs;
 import net.park.tutorialmod.items.ModItems;
 import net.park.tutorialmod.loot.ModLootModifiers;
+import net.park.tutorialmod.sound.ModSounds;
 import net.park.tutorialmod.villager.ModVillagers;
 import org.slf4j.Logger;
 
@@ -42,6 +43,7 @@ public class TutorialMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModSounds.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModLootModifiers.register(modEventBus);
 
