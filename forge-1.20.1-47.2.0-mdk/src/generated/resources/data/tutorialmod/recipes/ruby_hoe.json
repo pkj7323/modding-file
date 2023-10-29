@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "tutorialmod:iron_stick"
+    },
+    "S": {
+      "item": "tutorialmod:ruby"
+    }
+  },
+  "pattern": [
+    "SS",
+    " #",
+    " #"
+  ],
+  "result": {
+    "item": "tutorialmod:ruby_hoe"
+  },
+  "show_notification": true
+}
