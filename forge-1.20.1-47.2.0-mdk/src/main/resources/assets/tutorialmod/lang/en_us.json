@@ -40,7 +40,9 @@
 
   "item.tutorialmod.pine_cone": "pine_cone",
 
+
+
+  "entity.minecraft.villager.tutorialmod.soundmaster": "Sound Master",
+
   "creativetab.tutorial_tab": "ruby tutorial Tab"
-
-
 }

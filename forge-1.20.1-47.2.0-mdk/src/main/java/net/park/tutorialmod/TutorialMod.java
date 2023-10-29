@@ -20,6 +20,7 @@ import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.ModCreativeModTabs;
 import net.park.tutorialmod.items.ModItems;
 import net.park.tutorialmod.loot.ModLootModifiers;
+import net.park.tutorialmod.villager.ModVillagers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -41,6 +42,7 @@ public class TutorialMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModVillagers.register(modEventBus);
         ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);

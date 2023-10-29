@@ -9,12 +9,15 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.EnchantmentInstance;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.park.tutorialmod.TutorialMod;
+import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.ModItems;
+import net.park.tutorialmod.villager.ModVillagers;
 
 import java.util.List;
 
@@ -47,11 +50,43 @@ public class ModEvents {
 
             ItemStack enchantedBook =EnchantedBookItem.createForEnchantment(new EnchantmentInstance(Enchantments.THORNS,5));
 
-
+            //레벨1
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD,2),
                     enchantedBook,
                     2,8,0.02f));
+
+        }
+        if (event.getType()== ModVillagers.SOUND_MASTER.get()){
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades=event.getTrades();
+
+            //레벨1
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD,16),
+                    new ItemStack(ModBlocks.SOUND_BLOCK.get()),
+                    2,8,0.02f));
+
+            //레벨2
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD,6),
+                    new ItemStack(ModBlocks.SOUND_BLOCK.get()),
+                    16,8,0.02f));
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD,6),
+                    new ItemStack(ModBlocks.RUBY_BLOCK.get()),
+                    16,8,0.02f));
+
+            //레벨3
+            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD,4),
+                    new ItemStack(ModBlocks.SOUND_BLOCK.get()),
+                    20,8,0.02f));
+            //레벨4
+            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD,1),
+                    new ItemStack(Blocks.NETHERITE_BLOCK),
+                    2,8,0.02f));
+
 
         }
     }
@@ -72,5 +107,6 @@ public class ModEvents {
                 10,2,0.2f));
 
     }
+
 
 }
