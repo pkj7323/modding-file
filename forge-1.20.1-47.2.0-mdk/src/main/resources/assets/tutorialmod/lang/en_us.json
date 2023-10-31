@@ -22,6 +22,17 @@
   "item.tutorialmod.corn_seeds": "Corn seeds",
   "item.tutorialmod.corn": "Corn",
 
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "item.tutorialmod.sakuramitsutsuki_music_disc": "Sakuramitsutsuki Music Disc",
+  "item.tutorialmod.sakuramitsutsuki_music_disc.desc": "Spy Air - Sakuramitsutsuki",
+
+  "item.tutorialmod.strawberry": "strawberry",
+
+  "item.tutorialmod.pine_cone": "pine_cone",
+
+
 
   "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.raw_ruby_block": "Block of Raw_Ruby",
@@ -36,9 +47,7 @@
 
 
 
-  "item.tutorialmod.strawberry": "strawberry",
 
-  "item.tutorialmod.pine_cone": "pine_cone",
 
 
   "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Jingle",

@@ -60,6 +60,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.PINE_CONE.get());
 
                         pOutput.accept(ModBlocks.CATMINT.get());
+
+                        pOutput.accept(ModItems.BAR_BRAWL_MUISIC_DISC.get());
+                        pOutput.accept(ModItems.SAKURAMITSUTSUKI_MUSIC_DISC.get());
                     })
                     .build());
 

@@ -27,5 +27,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.RUBY_CHESTPLATE.get(),
                         ModItems.RUBY_LEGGINGS.get(),
                         ModItems.RUBY_BOOTS.get());
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.BAR_BRAWL_MUISIC_DISC.get())
+                .add(ModItems.SAKURAMITSUTSUKI_MUSIC_DISC.get());
+        this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.BAR_BRAWL_MUISIC_DISC.get())
+                .add(ModItems.SAKURAMITSUTSUKI_MUSIC_DISC.get());
     }
 }

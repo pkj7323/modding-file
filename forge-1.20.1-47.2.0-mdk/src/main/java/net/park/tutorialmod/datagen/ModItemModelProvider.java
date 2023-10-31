@@ -1,5 +1,6 @@
 package net.park.tutorialmod.datagen;
 
+import net.minecraftforge.fml.common.Mod;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.ModItems;
@@ -54,6 +55,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PINE_CONE);
 
         simpleItem(ModItems.IRON_STICK);
+
+        simpleItem(ModItems.BAR_BRAWL_MUISIC_DISC);
+        simpleItem(ModItems.SAKURAMITSUTSUKI_MUSIC_DISC);
 
         handheldItem(ModItems.RUBY_SWORD);
         handheldItem(ModItems.RUBY_SHOVEL);

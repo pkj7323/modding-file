@@ -12,6 +12,7 @@ import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.custom.FuelItem;
 import net.park.tutorialmod.items.custom.MetalDetectoritem;
 import net.park.tutorialmod.items.custom.ModArmoritem;
+import net.park.tutorialmod.sound.ModSounds;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS=
@@ -67,6 +68,11 @@ public class ModItems {
             ()-> new ItemNameBlockItem(ModBlocks.CORN_CROP.get(),new Item.Properties()));
     public static final RegistryObject<Item> CORN=ITEMS.register("corn",
             ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BAR_BRAWL_MUISIC_DISC=ITEMS.register("bar_brawl_music_disc",
+            ()-> new RecordItem(6, ModSounds.BAR_BRAWL.get(),new Item.Properties().stacksTo(1),2440));//시간은 초*20
+    public static final RegistryObject<Item> SAKURAMITSUTSUKI_MUSIC_DISC=ITEMS.register("sakuramitsutsuki_music_disc",
+            ()-> new RecordItem(6, ModSounds.SAKURAMITSUTSUKI.get(),new Item.Properties().stacksTo(1),4320));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
