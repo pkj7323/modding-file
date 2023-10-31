@@ -63,6 +63,9 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.BAR_BRAWL_MUISIC_DISC.get());
                         pOutput.accept(ModItems.SAKURAMITSUTSUKI_MUSIC_DISC.get());
+
+
+                        pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
                     })
                     .build());
 

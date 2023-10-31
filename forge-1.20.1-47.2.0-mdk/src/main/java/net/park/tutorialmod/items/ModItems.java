@@ -2,6 +2,7 @@ package net.park.tutorialmod.items;
 
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -9,6 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
+import net.park.tutorialmod.entity.ModEntities;
 import net.park.tutorialmod.items.custom.FuelItem;
 import net.park.tutorialmod.items.custom.MetalDetectoritem;
 import net.park.tutorialmod.items.custom.ModArmoritem;
@@ -73,6 +75,10 @@ public class ModItems {
             ()-> new RecordItem(6, ModSounds.BAR_BRAWL.get(),new Item.Properties().stacksTo(1),2440));//시간은 초*20
     public static final RegistryObject<Item> SAKURAMITSUTSUKI_MUSIC_DISC=ITEMS.register("sakuramitsutsuki_music_disc",
             ()-> new RecordItem(6, ModSounds.SAKURAMITSUTSUKI.get(),new Item.Properties().stacksTo(1),4320));
+
+public static final RegistryObject<Item>RHINO_SPAWN_EGG=ITEMS.register("rhino_spawn_egg",
+        ()->new ForgeSpawnEggItem(ModEntities.RHINO,0x7e9680,0xc5d1c5,
+                new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

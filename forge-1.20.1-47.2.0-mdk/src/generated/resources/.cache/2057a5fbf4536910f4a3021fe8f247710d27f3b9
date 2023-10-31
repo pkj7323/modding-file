@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-31T14:51:14.7685017	Item Models: tutorialmod
+// 1.20.1	2023-10-31T17:47:40.9676769	Item Models: tutorialmod
 f746b64540daf2ab6302b3ec01a78490c48fc10b assets/tutorialmod/models/item/bar_brawl_music_disc.json
 d3e9cad00ae44c9319dfbb411667eb4a09a63e57 assets/tutorialmod/models/item/catmint.json
 6126e26da373f9113d9e9be875b14a0d13857444 assets/tutorialmod/models/item/corn.json
@@ -8,6 +8,7 @@ a8741ea58836e934ef539586e01776941acae371 assets/tutorialmod/models/item/iron_sti
 93719e53df04c62d91023fe733206eb93b7aac86 assets/tutorialmod/models/item/metal_detector.json
 d56de8e6898d1c12a15eca045badafe1947aa387 assets/tutorialmod/models/item/pine_cone.json
 dd8175fa12280ab5f11423a30ce62f43befa9a1d assets/tutorialmod/models/item/raw_ruby.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/tutorialmod/models/item/rhino_spawn_egg.json
 d07fad06b4e5a92363d8d18e034dbd6a8641d34d assets/tutorialmod/models/item/ruby.json
 51873f8f87730b46b130fc3b1c61bb0c554d04a7 assets/tutorialmod/models/item/ruby_axe.json
 60d06b483fa3e271f49e0b1f4d88b5716a88bac4 assets/tutorialmod/models/item/ruby_boots.json
