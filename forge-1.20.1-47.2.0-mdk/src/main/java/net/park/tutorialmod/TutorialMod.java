@@ -2,6 +2,7 @@ package net.park.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -19,11 +20,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.park.tutorialmod.block.ModBlocks;
+import net.park.tutorialmod.block.entity.ModBlockEntities;
 import net.park.tutorialmod.entity.ModEntities;
 import net.park.tutorialmod.entity.client.RhinoRenderer;
 import net.park.tutorialmod.items.ModCreativeModTabs;
 import net.park.tutorialmod.items.ModItems;
 import net.park.tutorialmod.loot.ModLootModifiers;
+import net.park.tutorialmod.screen.GemPolishingStationScreen;
+import net.park.tutorialmod.screen.ModMenuTypes;
 import net.park.tutorialmod.sound.ModSounds;
 import net.park.tutorialmod.villager.ModVillagers;
 import org.slf4j.Logger;
@@ -42,14 +46,19 @@ public class TutorialMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
 
+
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModSounds.register(modEventBus);
         ModEntities.register(modEventBus);
 
-        ModSounds.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+
         ModVillagers.register(modEventBus);
         ModLootModifiers.register(modEventBus);
 
@@ -89,6 +98,8 @@ public class TutorialMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
+
+            MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
         }
     }
 }

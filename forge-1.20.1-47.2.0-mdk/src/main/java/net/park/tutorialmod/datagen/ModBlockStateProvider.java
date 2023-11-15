@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
@@ -45,6 +46,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         simpleBlockWithItem(ModBlocks.POTTED_CATMINT.get(), models().singleTexture("potted_catmint", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CATMINT.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.GEM_POLISHING_STATION.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/gem_polishing_station")));
 
     }
     public void makeStrawberryCrop(CropBlock block,String modelName,String textureName){

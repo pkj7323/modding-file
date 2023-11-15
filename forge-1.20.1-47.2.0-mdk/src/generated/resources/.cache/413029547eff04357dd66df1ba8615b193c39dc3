@@ -1,8 +1,9 @@
-// 1.20.1	2023-10-25T16:49:17.1923413	Block States: tutorialmod
+// 1.20.1	2023-11-15T19:24:53.583253	Block States: tutorialmod
 4f6f6f43eb03fe4d9e5ce223f245812e0d7eae93 assets/tutorialmod/blockstates/catmint.json
 d537bf85846bd7eeffa314408c867cc1a7d531d5 assets/tutorialmod/blockstates/corn_crop.json
 227887ba16919b1cedc0c4188b78790643c2d62e assets/tutorialmod/blockstates/deepslate_ruby_ore.json
 1cb7a0c0bb09c1361daf1cdbeea79f58ae1eb43a assets/tutorialmod/blockstates/ender_ruby_ore.json
+ff720ea0aea021144b8557786f6e7f9dead2fd78 assets/tutorialmod/blockstates/gem_polishing_station.json
 69c2d540b8ddbd4e551bd70db496c57ee6450e49 assets/tutorialmod/blockstates/nether_ruby_ore.json
 55ae2b8c248ffe83a87a26b6c0f87c784f9049db assets/tutorialmod/blockstates/potted_catmint.json
 86c7c307167b5a0efe2175235a7fa584d4523ac3 assets/tutorialmod/blockstates/raw_ruby_block.json
@@ -37,6 +38,7 @@ b14b9dd2aa2d96cbbb4d20f9d0741c1bf4476786 assets/tutorialmod/models/block/strawbe
 71616f74a5e0922f50c9869941f63040b82c0499 assets/tutorialmod/models/item/catmint.json
 6be76f1a1ff65477cdf294793fa18f09f935d954 assets/tutorialmod/models/item/deepslate_ruby_ore.json
 dd7a91cc51b5d0dc685db4b7026c490b941019cf assets/tutorialmod/models/item/ender_ruby_ore.json
+c6fe90ee84600fb9c1f42a398459a0d8b38fe198 assets/tutorialmod/models/item/gem_polishing_station.json
 c0634688a6b5b0c7310b2a754b1b90e7f02c886f assets/tutorialmod/models/item/nether_ruby_ore.json
 1a7f76b967a6270a0443871f08ca1a655740a97d assets/tutorialmod/models/item/potted_catmint.json
 fdfadf4fbed71a5d0dee8237f61cf4a05d5b93d4 assets/tutorialmod/models/item/raw_ruby_block.json

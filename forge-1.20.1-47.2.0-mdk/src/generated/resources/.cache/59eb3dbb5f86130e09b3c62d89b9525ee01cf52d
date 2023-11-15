@@ -1,8 +1,9 @@
-// 1.20.1	2023-10-25T16:49:17.1903413	Loot Tables
+// 1.20.1	2023-11-15T19:21:18.6955724	Loot Tables
 a5308914890f4fbc6d39248caa834f368767be60 data/tutorialmod/loot_tables/blocks/catmint.json
 6c9ebf0160580ee21535fe3b1a2a5cd808cacb89 data/tutorialmod/loot_tables/blocks/corn_crop.json
 1efd4699b8d0fcc780c059a9e97419c8ee5d3270 data/tutorialmod/loot_tables/blocks/deepslate_ruby_ore.json
 8ca7c69d9c4302f8193fdba7de65d88a9dbbf37e data/tutorialmod/loot_tables/blocks/ender_ruby_ore.json
+ae181fa3b2781be60d3127b43d33111085e53d7d data/tutorialmod/loot_tables/blocks/gem_polishing_station.json
 df1c11421b4d2eed9df53a963e4ce6414097ccd6 data/tutorialmod/loot_tables/blocks/nether_ruby_ore.json
 64ba5568715cb39bbac17bf9a847cf65f79bec13 data/tutorialmod/loot_tables/blocks/potted_catmint.json
 37bb33fb9a112e8c080147048a33975d729de521 data/tutorialmod/loot_tables/blocks/raw_ruby_block.json
