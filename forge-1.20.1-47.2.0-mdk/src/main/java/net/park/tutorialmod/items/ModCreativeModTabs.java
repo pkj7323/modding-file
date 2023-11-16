@@ -6,6 +6,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
@@ -33,10 +34,25 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY_SHOVEL.get());
                         pOutput.accept(ModItems.RUBY_HOE.get());
 
+                        pOutput.accept(ModItems.RUBY_STAFF.get());
+
+
+
                         pOutput.accept(ModItems.RUBY_HELMET.get());
                         pOutput.accept(ModItems.RUBY_CHESTPLATE.get());
                         pOutput.accept(ModItems.RUBY_LEGGINGS.get());
                         pOutput.accept(ModItems.RUBY_BOOTS.get());
+
+                        pOutput.accept(ModBlocks.RUBY_STAIRS.get());
+                        pOutput.accept(ModBlocks.RUBY_DOOR.get());
+                        pOutput.accept(ModBlocks.RUBY_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.RUBY_WALL.get());
+                        pOutput.accept(ModBlocks.RUBY_SLAB.get());
+                        pOutput.accept(ModBlocks.RUBY_BUTTON.get());
+                        pOutput.accept(ModBlocks.RUBY_FENCE.get());
+                        pOutput.accept(ModBlocks.RUBY_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.RUBY_PRESSURE_PLATE.get());
+
 
 
 

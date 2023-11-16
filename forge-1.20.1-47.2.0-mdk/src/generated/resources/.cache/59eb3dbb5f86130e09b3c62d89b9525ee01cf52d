@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-15T19:21:18.6955724	Loot Tables
+// 1.20.1	2023-11-16T16:01:16.628917	Loot Tables
 a5308914890f4fbc6d39248caa834f368767be60 data/tutorialmod/loot_tables/blocks/catmint.json
 6c9ebf0160580ee21535fe3b1a2a5cd808cacb89 data/tutorialmod/loot_tables/blocks/corn_crop.json
 1efd4699b8d0fcc780c059a9e97419c8ee5d3270 data/tutorialmod/loot_tables/blocks/deepslate_ruby_ore.json
@@ -8,6 +8,15 @@ df1c11421b4d2eed9df53a963e4ce6414097ccd6 data/tutorialmod/loot_tables/blocks/net
 64ba5568715cb39bbac17bf9a847cf65f79bec13 data/tutorialmod/loot_tables/blocks/potted_catmint.json
 37bb33fb9a112e8c080147048a33975d729de521 data/tutorialmod/loot_tables/blocks/raw_ruby_block.json
 e0d215bbde990fd2f6b925b06c967165dcb8f8df data/tutorialmod/loot_tables/blocks/ruby_block.json
+e7dd53ac43ed2e0487d386c2b46d5e9e4121d434 data/tutorialmod/loot_tables/blocks/ruby_button.json
+2c7e9b216887599aa0042fa215364675f154f36b data/tutorialmod/loot_tables/blocks/ruby_door.json
+3812c21b6dd74299a1e3b2164443a70aee0e8789 data/tutorialmod/loot_tables/blocks/ruby_fence.json
+9317a0f780f528153619f5b34f109afd86fa6b8b data/tutorialmod/loot_tables/blocks/ruby_fence_gate.json
 475b8c787a17c5bb2327a3379ad4148c13f899b0 data/tutorialmod/loot_tables/blocks/ruby_ore.json
+f1ddde8e4bf98e38ca0b8a0a6d105780a0535c30 data/tutorialmod/loot_tables/blocks/ruby_pressure_plate.json
+d1cd8709b4725f78327885bf7a83811a96cfb637 data/tutorialmod/loot_tables/blocks/ruby_slab.json
+81a04dd0259d9a87e6fffd6d107e7b8811a6d571 data/tutorialmod/loot_tables/blocks/ruby_stairs.json
+61c2a1540bd4d7ac046216701481a5e7a9fca3c2 data/tutorialmod/loot_tables/blocks/ruby_trapdoor.json
+6b78e114060fef6414259d4e9d6aa8744509778d data/tutorialmod/loot_tables/blocks/ruby_wall.json
 4a8cfacccc2c162b32d7ced097c65185c5c5bc88 data/tutorialmod/loot_tables/blocks/sound_block.json
 1f5745e65cfe5db7b41fcdf352e1a9f3378f9874 data/tutorialmod/loot_tables/blocks/strawberry_crop.json

@@ -39,6 +39,11 @@ public class ModItems {
     public static final RegistryObject<Item> DEUS_EX_MACHINA=ITEMS.register("deus_ex_machina",
             ()-> new SwordItem(ModToolTiers.GOD,1000,3.5f,
                     new Item.Properties().fireResistant().setNoRepair()));
+
+    public static final RegistryObject<Item> RUBY_STAFF=ITEMS.register("ruby_staff",
+            ()-> new Item(new Item.Properties().stacksTo(1)));
+
+
     public static final RegistryObject<Item> RUBY_SWORD=ITEMS.register("ruby_sword",
             ()-> new SwordItem(ModToolTiers.RUBY,8,2,
                     new SwordItem.Properties()));

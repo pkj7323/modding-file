@@ -13,6 +13,9 @@
   "item.tutorialmod.ruby_axe": "ruby axe",
 
 
+  "item.tutorialmod.ruby_staff": "ruby staff",
+
+
   "item.tutorialmod.ruby_helmet": "Ruby helmet",
   "item.tutorialmod.ruby_chestplate": "Ruby chestplate",
   "item.tutorialmod.ruby_leggings": "Ruby leggings",
@@ -40,8 +43,27 @@
   "block.tutorialmod.ender_ruby_ore": "ender ruby ore",
   "block.tutorialmod.deepslate_ruby_ore": "deepslate ruby ore",
   "block.tutorialmod.nether_ruby_ore": "nether ruby ore",
+
+  "block.tutorialmod.ruby_stairs": "Ruby Stiars",
+  "block.tutorialmod.ruby_slab": "Ruby Slab",
+  "block.tutorialmod.ruby_button": "Ruby Button",
+  "block.tutorialmod.ruby_pressure_plate": "Ruby Pressure Plate",
+  "block.tutorialmod.ruby_fence": "Ruby Fence",
+  "block.tutorialmod.ruby_fence_gate": "Ruby Fence Gate",
+  "block.tutorialmod.ruby_wall": "Ruby Wall",
+  "block.tutorialmod.ruby_door": "Ruby Door",
+  "block.tutorialmod.ruby_trapdoor": "Ruby Trapdoor",
+
+
+
+
+
   "block.tutorialmod.sound_block": "custom sound block",
   "block.tutorialmod.catmint": "Catmint",
+
+
+
+
   "block.tutorialmod.gem_polishing_station": "Gem Polishing station",
 
 

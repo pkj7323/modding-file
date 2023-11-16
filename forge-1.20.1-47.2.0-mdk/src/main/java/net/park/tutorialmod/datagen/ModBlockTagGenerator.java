@@ -40,5 +40,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NETHER_RUBY_ORE.get());
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.ENDER_RUBY_ORE.get());
+
+
+
+        //울타리가 연결되기 위해서는 태그 설정이 필요
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.RUBY_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.RUBY_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.RUBY_WALL.get());
+
+
     }
 }
