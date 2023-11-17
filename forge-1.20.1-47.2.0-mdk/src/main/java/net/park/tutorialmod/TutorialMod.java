@@ -26,6 +26,7 @@ import net.park.tutorialmod.entity.client.RhinoRenderer;
 import net.park.tutorialmod.items.ModCreativeModTabs;
 import net.park.tutorialmod.items.ModItems;
 import net.park.tutorialmod.loot.ModLootModifiers;
+import net.park.tutorialmod.recipe.ModRecipes;
 import net.park.tutorialmod.screen.GemPolishingStationScreen;
 import net.park.tutorialmod.screen.ModMenuTypes;
 import net.park.tutorialmod.sound.ModSounds;
@@ -45,7 +46,7 @@ public class TutorialMod
     public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-
+        ModRecipes.register(modEventBus);
 
         ModCreativeModTabs.register(modEventBus);
 

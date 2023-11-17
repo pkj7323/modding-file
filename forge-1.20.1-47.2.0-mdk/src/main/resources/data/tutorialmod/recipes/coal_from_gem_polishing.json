@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:gem_polishing",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "output": {
+    "count": 7,
+    "item": "minecraft:coal"
+  }
+}
