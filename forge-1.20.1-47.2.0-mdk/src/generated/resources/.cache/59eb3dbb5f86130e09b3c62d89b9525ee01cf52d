@@ -1,10 +1,14 @@
-// 1.20.1	2023-11-16T16:01:16.628917	Loot Tables
+// 1.20.1	2023-11-22T16:31:01.6498393	Loot Tables
 a5308914890f4fbc6d39248caa834f368767be60 data/tutorialmod/loot_tables/blocks/catmint.json
 6c9ebf0160580ee21535fe3b1a2a5cd808cacb89 data/tutorialmod/loot_tables/blocks/corn_crop.json
 1efd4699b8d0fcc780c059a9e97419c8ee5d3270 data/tutorialmod/loot_tables/blocks/deepslate_ruby_ore.json
 8ca7c69d9c4302f8193fdba7de65d88a9dbbf37e data/tutorialmod/loot_tables/blocks/ender_ruby_ore.json
 ae181fa3b2781be60d3127b43d33111085e53d7d data/tutorialmod/loot_tables/blocks/gem_polishing_station.json
 df1c11421b4d2eed9df53a963e4ce6414097ccd6 data/tutorialmod/loot_tables/blocks/nether_ruby_ore.json
+d2be3baf280a053f5bb83c8785a19eaf2b4bf796 data/tutorialmod/loot_tables/blocks/pine_leaves.json
+57ab8e1b21c0ed7823cb47210e9090f0e37ffd1a data/tutorialmod/loot_tables/blocks/pine_log.json
+5e3fbaa8cb61660404a2a4449ab965d1c7940aa2 data/tutorialmod/loot_tables/blocks/pine_planks.json
+0203579282aad7eb6c08abcf49145eec1bc33914 data/tutorialmod/loot_tables/blocks/pine_wood.json
 64ba5568715cb39bbac17bf9a847cf65f79bec13 data/tutorialmod/loot_tables/blocks/potted_catmint.json
 37bb33fb9a112e8c080147048a33975d729de521 data/tutorialmod/loot_tables/blocks/raw_ruby_block.json
 e0d215bbde990fd2f6b925b06c967165dcb8f8df data/tutorialmod/loot_tables/blocks/ruby_block.json
@@ -20,3 +24,5 @@ d1cd8709b4725f78327885bf7a83811a96cfb637 data/tutorialmod/loot_tables/blocks/rub
 6b78e114060fef6414259d4e9d6aa8744509778d data/tutorialmod/loot_tables/blocks/ruby_wall.json
 4a8cfacccc2c162b32d7ced097c65185c5c5bc88 data/tutorialmod/loot_tables/blocks/sound_block.json
 1f5745e65cfe5db7b41fcdf352e1a9f3378f9874 data/tutorialmod/loot_tables/blocks/strawberry_crop.json
+8f124ad7aafb89b6a6bac5f235a72348c85ef7f5 data/tutorialmod/loot_tables/blocks/stripped_pine_log.json
+c8e86fd6e644f2c0abfad143c43bbc294422c416 data/tutorialmod/loot_tables/blocks/stripped_pine_wood.json

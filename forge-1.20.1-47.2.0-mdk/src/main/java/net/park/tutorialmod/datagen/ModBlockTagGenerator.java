@@ -6,6 +6,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.util.ModTags;
@@ -50,7 +51,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RUBY_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.RUBY_WALL.get());
-
-
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PINE_LOG.get())
+                .add(ModBlocks.PINE_WOOD.get())
+                .add(ModBlocks.STRIPPED_PINE_LOG.get())
+                .add(ModBlocks.STRIPPED_PINE_WOOD.get());
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.PINE_PLANKS.get());
     }
 }

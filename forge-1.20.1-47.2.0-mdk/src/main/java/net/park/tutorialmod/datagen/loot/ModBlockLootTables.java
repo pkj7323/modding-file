@@ -52,6 +52,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RUBY_FENCE_GATE.get());
         this.dropSelf(ModBlocks.RUBY_WALL.get());
 
+
+        this.dropSelf(ModBlocks.PINE_LOG.get());
+        this.dropSelf(ModBlocks.PINE_PLANKS.get());
+        this.dropSelf(ModBlocks.PINE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PINE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_PINE_WOOD.get());
+
+        this.add(ModBlocks.PINE_LEAVES.get(), block ->
+                createLeavesDrops(block,ModBlocks.RUBY_BLOCK.get(),NORMAL_LEAVES_SAPLING_CHANCES));//TODO:change to Sapling
+
+
+
+
+
         this.add(ModBlocks.RUBY_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.RUBY_SLAB.get()));
         this.add(ModBlocks.RUBY_DOOR.get(),
