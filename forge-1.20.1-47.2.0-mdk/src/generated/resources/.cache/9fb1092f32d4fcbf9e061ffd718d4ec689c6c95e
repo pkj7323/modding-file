@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-10T01:10:55.162341	Recipes
+// 1.20.1	2023-12-01T20:38:04.4074027	Recipes
 d46974625030354fb46c156b0314417ffa8c603a data/tutorialmod/advancements/recipes/combat/ruby_boots.json
 9bc9a96b4cc0bc878d0039cfc0147fa40b262862 data/tutorialmod/advancements/recipes/combat/ruby_chestplate.json
 cd36c8fb50b975c8601bd548ee5455ce21ef6bb3 data/tutorialmod/advancements/recipes/combat/ruby_helmet.json
@@ -19,6 +19,8 @@ c92665e86e83c8d3f9feb954703e4baab28135af data/tutorialmod/advancements/recipes/m
 5a0a1c4e9f35d60ddfbfe1cddd002768cebbe5ee data/tutorialmod/advancements/recipes/misc/ruby_from_smelting_raw_ruby.json
 1f3ec80b1920cdd7c8bd11fe1841fedd4eba98ae data/tutorialmod/advancements/recipes/misc/ruby_from_smelting_ruby_ore.json
 9198aabc51512cc828873688ba7fd5355af3d81f data/tutorialmod/advancements/recipes/tools/ruby_axe.json
+74ea919670bf994a4cbcae7a52fce0b0cfac3b3f data/tutorialmod/advancements/recipes/tools/ruby_field_shovel.json
+e674e4c99ab4c4a1c02d29fbf0a02196fcd72d41 data/tutorialmod/advancements/recipes/tools/ruby_hammer.json
 ec81e61bf19ec1809511de07d711ee7a5b84521a data/tutorialmod/advancements/recipes/tools/ruby_hoe.json
 4d5fc397a4856394d252be306b97be349625c873 data/tutorialmod/advancements/recipes/tools/ruby_pickaxe.json
 182dbcb1c7a9f0aaac4b6f0baf38ef70df62d8d4 data/tutorialmod/advancements/recipes/tools/ruby_shovel.json
@@ -29,6 +31,7 @@ dfb8ad031acbb083aa37384634008fb53f98904c data/tutorialmod/recipes/iron_stick.jso
 c49ec55731a06c0e36c50447ced7101811a6c78a data/tutorialmod/recipes/ruby_block.json
 02b9b5ac7ae3d852fbead6221f3af7e510d39c37 data/tutorialmod/recipes/ruby_boots.json
 ef1a4c042726ed00d2e43542edbad315ae13d62a data/tutorialmod/recipes/ruby_chestplate.json
+d6171a8614b01a0a86596d32c1b4bd02e02d923b data/tutorialmod/recipes/ruby_field_shovel.json
 8cb6141e15c276db85a6c7aadc704785e436b96b data/tutorialmod/recipes/ruby_from_blasting_deepslate_ruby_ore.json
 3348448d82b32a471d275b4b25a39e25d547d562 data/tutorialmod/recipes/ruby_from_blasting_ender_ruby_ore.json
 70ad7ff0373c859c8d8bcf6aaa024bc9dc1ece4b data/tutorialmod/recipes/ruby_from_blasting_nether_ruby_ore.json
@@ -39,6 +42,7 @@ c398b3d5d20f882150b9eb9e1f3384cb01d5683c data/tutorialmod/recipes/ruby_from_blas
 dc82972540266e60fa002ffb988c13cd00b124bb data/tutorialmod/recipes/ruby_from_smelting_nether_ruby_ore.json
 f6415c9a3383145f0408c614fcdad1cb0769c333 data/tutorialmod/recipes/ruby_from_smelting_raw_ruby.json
 708e83990a98fc2463737ae5636a562e9c7cdd97 data/tutorialmod/recipes/ruby_from_smelting_ruby_ore.json
+06e3bcfb573194ea4f4c54eaf57b192c93648645 data/tutorialmod/recipes/ruby_hammer.json
 0f5b4413c704d21725293332d375891e5426be6d data/tutorialmod/recipes/ruby_helmet.json
 2ee6519d1ac10d5e55f837817896c75412dd7677 data/tutorialmod/recipes/ruby_hoe.json
 112aab0fab901766ac651c95e822b8ba0ce2a888 data/tutorialmod/recipes/ruby_leggings.json

@@ -35,6 +35,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY_HOE.get());
                         pOutput.accept(ModItems.RUBY_STAFF.get());//3d모델링
                         pOutput.accept(ModItems.RUBY_HAMMER.get());
+                        pOutput.accept(ModItems.RUBY_FIELD_SHOVEL.get());
 
 
 

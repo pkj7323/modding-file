@@ -21,6 +21,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.ModItems;
+import net.park.tutorialmod.items.custom.FieldShovelItem;
 import net.park.tutorialmod.items.custom.HammerItem;
 import net.park.tutorialmod.villager.ModVillagers;
 
@@ -44,6 +45,30 @@ public class ModEvents {
 
             for (BlockPos pos : HammerItem.getBlocksToBeDestroyed(1, initalBlockPos, serverPlayer)) {
                 if (pos == initalBlockPos || !hammer.isCorrectToolForDrops(mainHandItem, event.getLevel().getBlockState(pos))) {
+                    continue;
+                }
+
+                // Have to add them to a Set otherwise, the same code right here will get called for each block!
+                HARVESTED_BLOCKS.add(pos);
+                serverPlayer.gameMode.destroyBlock(pos);
+                HARVESTED_BLOCKS.remove(pos);
+            }
+        }
+
+    }
+    @SubscribeEvent
+    public static void onFieldShovelUasge(BlockEvent.BreakEvent event){
+        Player player =event.getPlayer();
+        ItemStack mainHandItem=player.getMainHandItem();
+
+        if (mainHandItem.getItem() instanceof FieldShovelItem fieldShovelItem &&player instanceof ServerPlayer serverPlayer) {
+            BlockPos initalBlockPos = event.getPos();
+            if (HARVESTED_BLOCKS.contains(initalBlockPos)) {
+                return;
+            }
+
+            for (BlockPos pos : HammerItem.getBlocksToBeDestroyed(1, initalBlockPos, serverPlayer)) {
+                if (pos == initalBlockPos || !fieldShovelItem.isCorrectToolForDrops(mainHandItem, event.getLevel().getBlockState(pos))) {
                     continue;
                 }
 

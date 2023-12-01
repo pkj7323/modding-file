@@ -71,7 +71,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S',ModItems.RUBY.get()).define('#',ModItems.IRON_STICK.get())
                 .unlockedBy(getHasName(ModItems.RUBY.get()),has(ModItems.RUBY.get()))
                 .save(pWriter);
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,ModItems.RUBY_HAMMER.get())
+                .pattern("SSS")
+                .pattern("S#S")
+                .pattern(" # ")
+                .define('S',ModBlocks.RUBY_BLOCK.get()).define('#',ModItems.IRON_STICK.get())
+                .unlockedBy(getHasName(ModItems.RUBY.get()),has(ModItems.RUBY.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,ModItems.RUBY_FIELD_SHOVEL.get())
+                .pattern("S")
+                .pattern("#")
+                .pattern("#")
+                .define('S',ModBlocks.RUBY_BLOCK.get()).define('#',ModItems.IRON_STICK.get())
+                .unlockedBy(getHasName(ModItems.RUBY.get()),has(ModItems.RUBY.get()))
+                .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,ModItems.RUBY_HOE.get())
                 .pattern("SS")
                 .pattern(" #")
@@ -120,10 +133,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
 
+
+
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.RUBY.get(),9)
                 .requires(ModBlocks.RUBY_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.RUBY_BLOCK.get()),has(ModBlocks.RUBY_BLOCK.get()))
                 .save(pWriter);
+
+
+
+
     }
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");

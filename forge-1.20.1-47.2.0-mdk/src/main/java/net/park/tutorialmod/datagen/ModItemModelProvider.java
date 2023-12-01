@@ -89,6 +89,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.RUBY_AXE);
         handheldItem(ModItems.DEUS_EX_MACHINA);
         handheldItem(ModItems.RUBY_HAMMER);
+        handheldItem(ModItems.RUBY_FIELD_SHOVEL);
 
         trimmedArmorItem(ModItems.RUBY_HELMET);
         trimmedArmorItem(ModItems.RUBY_CHESTPLATE);

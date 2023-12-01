@@ -11,10 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.entity.ModEntities;
-import net.park.tutorialmod.items.custom.FuelItem;
-import net.park.tutorialmod.items.custom.HammerItem;
-import net.park.tutorialmod.items.custom.MetalDetectoritem;
-import net.park.tutorialmod.items.custom.ModArmoritem;
+import net.park.tutorialmod.items.custom.*;
 import net.park.tutorialmod.sound.ModSounds;
 
 public class ModItems {
@@ -63,6 +60,9 @@ public class ModItems {
                     new Item.Properties()));
     public static final RegistryObject<Item> RUBY_HAMMER=ITEMS.register("ruby_hammer",
             ()-> new HammerItem(ModToolTiers.RUBY,2,3,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_FIELD_SHOVEL=ITEMS.register("ruby_field_shovel",
+            ()-> new FieldShovelItem(ModToolTiers.RUBY,2,3,
                     new Item.Properties()));
 
 

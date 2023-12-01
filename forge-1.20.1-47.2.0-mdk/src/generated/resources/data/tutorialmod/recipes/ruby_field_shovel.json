@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "tutorialmod:iron_stick"
+    },
+    "S": {
+      "item": "tutorialmod:ruby_block"
+    }
+  },
+  "pattern": [
+    "S",
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "tutorialmod:ruby_field_shovel"
+  },
+  "show_notification": true
+}
