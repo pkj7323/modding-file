@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-16T16:12:29.4096167	Item Models: tutorialmod
+// 1.20.1	2023-12-01T19:46:42.6557105	Item Models: tutorialmod
 f746b64540daf2ab6302b3ec01a78490c48fc10b assets/tutorialmod/models/item/bar_brawl_music_disc.json
 d3e9cad00ae44c9319dfbb411667eb4a09a63e57 assets/tutorialmod/models/item/catmint.json
 6126e26da373f9113d9e9be875b14a0d13857444 assets/tutorialmod/models/item/corn.json
@@ -37,6 +37,7 @@ df604a5827474a72c44e4b635f6e236bec0efdbf assets/tutorialmod/models/item/ruby_che
 1504e7995c19ddcf6288a7fcb06858c0932ce1e0 assets/tutorialmod/models/item/ruby_door.json
 4a19a801e98fb8e89f84c029ba6b1121d2fd2145 assets/tutorialmod/models/item/ruby_fence.json
 2547387565f9b3d33fece8e5a81ab0427be1c70b assets/tutorialmod/models/item/ruby_fence_gate.json
+7a9f0c938d3c38148777aeb220325ca7ad6748b4 assets/tutorialmod/models/item/ruby_hammer.json
 81202eef471feae254b00bd7b8acd350d446a509 assets/tutorialmod/models/item/ruby_helmet.json
 485384019f305ec87b30f495517b1a4b26bf6573 assets/tutorialmod/models/item/ruby_helmet_amethyst_trim.json
 d8b2580ea6eef824075bad08fc4b4a5c6bde7a19 assets/tutorialmod/models/item/ruby_helmet_copper_trim.json

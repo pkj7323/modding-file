@@ -13,7 +13,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.park.tutorialmod.items.util.ModTags;
+import net.park.tutorialmod.util.ModTags;
 import net.park.tutorialmod.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 

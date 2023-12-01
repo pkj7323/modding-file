@@ -22,10 +22,10 @@ public class ModCreativeModTabs {
             ()->CreativeModeTab.builder().icon(()->new ItemStack(ModItems.RUBY.get()))
                     .title(Component.translatable("creativetab.tutorial_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.RUBY.get());
-                        pOutput.accept(ModItems.RAW_RUBY.get());
-                        pOutput.accept(ModItems.IRON_STICK.get());
+                        
+                        
 
+                        //도구
                         pOutput.accept(ModItems.DEUS_EX_MACHINA.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.RUBY_SWORD.get());
@@ -33,16 +33,19 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY_AXE.get());
                         pOutput.accept(ModItems.RUBY_SHOVEL.get());
                         pOutput.accept(ModItems.RUBY_HOE.get());
+                        pOutput.accept(ModItems.RUBY_STAFF.get());//3d모델링
+                        pOutput.accept(ModItems.RUBY_HAMMER.get());
 
-                        pOutput.accept(ModItems.RUBY_STAFF.get());
 
 
 
+                        //갑옷
                         pOutput.accept(ModItems.RUBY_HELMET.get());
                         pOutput.accept(ModItems.RUBY_CHESTPLATE.get());
                         pOutput.accept(ModItems.RUBY_LEGGINGS.get());
                         pOutput.accept(ModItems.RUBY_BOOTS.get());
 
+                        //가공된 루비블럭
                         pOutput.accept(ModBlocks.RUBY_STAIRS.get());
                         pOutput.accept(ModBlocks.RUBY_DOOR.get());
                         pOutput.accept(ModBlocks.RUBY_TRAPDOOR.get());
@@ -57,6 +60,10 @@ public class ModCreativeModTabs {
 
 
 
+                        //광물
+                        pOutput.accept(ModItems.RUBY.get());
+                        pOutput.accept(ModItems.RAW_RUBY.get());
+                        
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
@@ -64,27 +71,36 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.NETHER_RUBY_ORE.get());
                         pOutput.accept(ModBlocks.RAW_RUBY_BLOCK.get());
 
+                        
+                        //기능이 들어간 블럭
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
+                        //음식
+                        //작물블럭
                         pOutput.accept(ModItems.STRAWBERRY.get());
                         pOutput.accept(ModItems.CORN.get());
-
-
                         pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
                         pOutput.accept(ModItems.CORN_SEEDS.get());
-
-                        pOutput.accept(ModItems.PINE_CONE.get());
-
+                        
+                        //재료
+                        pOutput.accept(ModItems.PINE_CONE.get());//연료
+                        pOutput.accept(ModItems.IRON_STICK.get());
+                        //꽃
                         pOutput.accept(ModBlocks.CATMINT.get());
 
+                        //음반
                         pOutput.accept(ModItems.BAR_BRAWL_MUISIC_DISC.get());
                         pOutput.accept(ModItems.SAKURAMITSUTSUKI_MUSIC_DISC.get());
 
-
+                        //스폰알 엔티티
                         pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
 
+                        
+                        //블록엔티티
                         pOutput.accept(ModBlocks.GEM_POLISHING_STATION.get());
 
+                        
+                        //나무
                         pOutput.accept(ModBlocks.PINE_LOG.get());
                         pOutput.accept(ModBlocks.STRIPPED_PINE_LOG.get());
                         pOutput.accept(ModBlocks.PINE_LEAVES.get());

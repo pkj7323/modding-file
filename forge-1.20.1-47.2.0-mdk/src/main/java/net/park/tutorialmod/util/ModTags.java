@@ -1,4 +1,4 @@
-package net.park.tutorialmod.items.util;
+package net.park.tutorialmod.util;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;

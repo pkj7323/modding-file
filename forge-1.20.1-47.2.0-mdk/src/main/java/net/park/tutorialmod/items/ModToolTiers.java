@@ -7,7 +7,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.common.TierSortingRegistry;
 import net.park.tutorialmod.TutorialMod;
-import net.park.tutorialmod.items.util.ModTags;
+import net.park.tutorialmod.util.ModTags;
 
 import java.util.List;
 

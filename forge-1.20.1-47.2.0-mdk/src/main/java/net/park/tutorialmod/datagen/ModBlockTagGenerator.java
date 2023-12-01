@@ -6,10 +6,9 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
-import net.park.tutorialmod.items.util.ModTags;
+import net.park.tutorialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;

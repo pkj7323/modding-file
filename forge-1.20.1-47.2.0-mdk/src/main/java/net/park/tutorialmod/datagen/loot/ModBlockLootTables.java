@@ -60,7 +60,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_PINE_WOOD.get());
 
         this.add(ModBlocks.PINE_LEAVES.get(), block ->
-                createLeavesDrops(block,ModBlocks.RUBY_BLOCK.get(),NORMAL_LEAVES_SAPLING_CHANCES));//TODO:change to Sapling
+                createLeavesDrops(block,ModBlocks.RUBY_BLOCK.get(),NORMAL_LEAVES_SAPLING_CHANCES));
 
 
 

@@ -59,8 +59,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BAR_BRAWL_MUISIC_DISC);
         simpleItem(ModItems.SAKURAMITSUTSUKI_MUSIC_DISC);
 
-        simpleBlockItem(ModBlocks.RUBY_DOOR);
 
+
+
+
+
+        simpleBlockItem(ModBlocks.RUBY_DOOR);
         fenceItem(ModBlocks.RUBY_FENCE,ModBlocks.RUBY_BLOCK);
         buttonItem(ModBlocks.RUBY_BUTTON,ModBlocks.RUBY_BLOCK);
         wallItem(ModBlocks.RUBY_WALL,ModBlocks.RUBY_BLOCK);
@@ -74,12 +78,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 
 
+
+
+
+
         handheldItem(ModItems.RUBY_SWORD);
         handheldItem(ModItems.RUBY_SHOVEL);
         handheldItem(ModItems.RUBY_HOE);
         handheldItem(ModItems.RUBY_PICKAXE);
         handheldItem(ModItems.RUBY_AXE);
         handheldItem(ModItems.DEUS_EX_MACHINA);
+        handheldItem(ModItems.RUBY_HAMMER);
 
         trimmedArmorItem(ModItems.RUBY_HELMET);
         trimmedArmorItem(ModItems.RUBY_CHESTPLATE);
