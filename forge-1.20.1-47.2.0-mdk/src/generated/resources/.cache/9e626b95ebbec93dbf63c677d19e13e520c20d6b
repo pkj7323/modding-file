@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-22T16:31:01.6528405	Tags for minecraft:block mod id tutorialmod
+// 1.20.1	2023-12-04T18:49:46.1120775	Tags for minecraft:block mod id tutorialmod
 a3c527497d9a7bee84cdf6a082976e8f0955dd04 data/forge/tags/blocks/needs_netherite_tool.json
 2027697e8146c81a04b2b16b27b2b44bf4bbe316 data/minecraft/tags/blocks/fences.json
 3e82c704aea4cea5d4face5a72484097c30b66e0 data/minecraft/tags/blocks/fence_gates.json
@@ -10,3 +10,4 @@ aecb4ddc0e2005202c5640cb534ae6a6cfa8a5b2 data/minecraft/tags/blocks/needs_iron_t
 6d2298526792ca18d84ed50a4b4d452e95f613e4 data/minecraft/tags/blocks/planks.json
 a4294123f7f371444f081e1c96232753d00441fd data/minecraft/tags/blocks/walls.json
 7a24642f1b7b1db874190f07da874446094b2308 data/tutorialmod/tags/blocks/metal_detector_valuables.json
+82362cfbd1836db13c7e9d36c8712821e795ac55 data/tutorialmod/tags/blocks/mineable/paxel.json

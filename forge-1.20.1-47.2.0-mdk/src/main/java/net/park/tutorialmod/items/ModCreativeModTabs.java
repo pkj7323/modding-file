@@ -36,6 +36,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY_STAFF.get());//3d모델링
                         pOutput.accept(ModItems.RUBY_HAMMER.get());
                         pOutput.accept(ModItems.RUBY_FIELD_SHOVEL.get());
+                        pOutput.accept(ModItems.RUBY_PAXEL.get());
 
 
 
@@ -45,6 +46,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY_CHESTPLATE.get());
                         pOutput.accept(ModItems.RUBY_LEGGINGS.get());
                         pOutput.accept(ModItems.RUBY_BOOTS.get());
+                        pOutput.accept(ModItems.RUBY_HORSE_ARMOR.get());
 
                         //가공된 루비블럭
                         pOutput.accept(ModBlocks.RUBY_STAIRS.get());

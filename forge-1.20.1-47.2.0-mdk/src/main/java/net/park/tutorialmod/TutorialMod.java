@@ -21,6 +21,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.block.entity.ModBlockEntities;
+import net.park.tutorialmod.enchantment.ModEnchantments;
 import net.park.tutorialmod.entity.ModEntities;
 import net.park.tutorialmod.entity.client.RhinoRenderer;
 import net.park.tutorialmod.items.ModCreativeModTabs;
@@ -62,6 +63,9 @@ public class TutorialMod
 
         ModVillagers.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+
+        ModEnchantments.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 

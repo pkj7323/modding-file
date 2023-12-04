@@ -59,6 +59,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BAR_BRAWL_MUISIC_DISC);
         simpleItem(ModItems.SAKURAMITSUTSUKI_MUSIC_DISC);
 
+        simpleItem(ModItems.RUBY_HORSE_ARMOR);
+
 
 
 
@@ -90,6 +92,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.DEUS_EX_MACHINA);
         handheldItem(ModItems.RUBY_HAMMER);
         handheldItem(ModItems.RUBY_FIELD_SHOVEL);
+        handheldItem(ModItems.RUBY_PAXEL);
+
+
 
         trimmedArmorItem(ModItems.RUBY_HELMET);
         trimmedArmorItem(ModItems.RUBY_CHESTPLATE);

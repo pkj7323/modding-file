@@ -12,7 +12,7 @@
   "item.tutorialmod.ruby_pickaxe": "ruby pickaxe",
   "item.tutorialmod.ruby_axe": "ruby axe",
   "item.tutorialmod.ruby_hammer": "RUBY Hammer",
-  "item.tutorialmod.ruby_paxel": "RUBY paxel",
+  "item.tutorialmod.ruby_paxel": "RUBY Paxel",
   "item.tutorialmod.ruby_field_shovel": "RUBY field shovel",
 
 
@@ -23,6 +23,11 @@
   "item.tutorialmod.ruby_chestplate": "Ruby chestplate",
   "item.tutorialmod.ruby_leggings": "Ruby leggings",
   "item.tutorialmod.ruby_boots": "Ruby boots",
+  "item.tutorialmod.ruby_horse_armor": "Ruby horse armor",
+
+
+
+
 
   "item.tutorialmod.strawberry_seeds": "Strawberry seeds",
   "item.tutorialmod.corn_seeds": "Corn seeds",
@@ -80,6 +85,7 @@
 
 
 
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
 
 
 

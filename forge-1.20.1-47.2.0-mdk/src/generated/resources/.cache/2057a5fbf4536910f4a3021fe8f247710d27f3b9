@@ -1,4 +1,4 @@
-// 1.20.1	2023-12-01T20:28:36.6739058	Item Models: tutorialmod
+// 1.20.1	2023-12-04T19:14:57.3702366	Item Models: tutorialmod
 f746b64540daf2ab6302b3ec01a78490c48fc10b assets/tutorialmod/models/item/bar_brawl_music_disc.json
 d3e9cad00ae44c9319dfbb411667eb4a09a63e57 assets/tutorialmod/models/item/catmint.json
 6126e26da373f9113d9e9be875b14a0d13857444 assets/tutorialmod/models/item/corn.json
@@ -51,6 +51,7 @@ ab328a99e65fed08119dbb5356cd6c7edf239107 assets/tutorialmod/models/item/ruby_hel
 5dd849d824328a0b117bcf0cf40be7f0c007cf7a assets/tutorialmod/models/item/ruby_helmet_quartz_trim.json
 e3f60b3866140ef9638c1ca652e87ca4a1cf97e0 assets/tutorialmod/models/item/ruby_helmet_redstone_trim.json
 6997dd76cdb440715c14eacd322c7404561c461b assets/tutorialmod/models/item/ruby_hoe.json
+f7d1493836d4df63ab22e0f06f15995cd4db26e4 assets/tutorialmod/models/item/ruby_horse_armor.json
 6ddae2c4a1b8206afd56c427e7cad15bfa3c090e assets/tutorialmod/models/item/ruby_leggings.json
 c0b0701701bb884e5b960972b7a75ff2a91f5632 assets/tutorialmod/models/item/ruby_leggings_amethyst_trim.json
 9c6e7b2abd59c5a64086be3d9bac690ba7c1f210 assets/tutorialmod/models/item/ruby_leggings_copper_trim.json
@@ -62,6 +63,7 @@ af912ab04408cfd43950413429080cbbfb4166ec assets/tutorialmod/models/item/ruby_leg
 95368a1c8479c6c4e238f74e7e5d5a0c1f459ef6 assets/tutorialmod/models/item/ruby_leggings_netherite_trim.json
 2a8d008a809f38e68eccea32c23096824f276b87 assets/tutorialmod/models/item/ruby_leggings_quartz_trim.json
 6032bba4e75d7969e8307fa8a8d0a4a014da1ac1 assets/tutorialmod/models/item/ruby_leggings_redstone_trim.json
+fb83cb9e90c140c761aa819cd097513eb12fa3a5 assets/tutorialmod/models/item/ruby_paxel.json
 d14fdf72f7d0be7bae19ad548d8f6957238ea558 assets/tutorialmod/models/item/ruby_pickaxe.json
 3099a76a0bbb2a689862d322c8ea1973b2d837c0 assets/tutorialmod/models/item/ruby_pressure_plate.json
 9bf4ea21309275e6ea9d5ed43210dd380deb8ff6 assets/tutorialmod/models/item/ruby_shovel.json

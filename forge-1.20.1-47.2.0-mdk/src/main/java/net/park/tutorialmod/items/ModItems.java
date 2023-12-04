@@ -1,5 +1,6 @@
 package net.park.tutorialmod.items;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -44,7 +45,7 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY_STAFF=ITEMS.register("ruby_staff",
             ()-> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> RUBY_SWORD=ITEMS.register("ruby_sword",
-            ()-> new SwordItem(ModToolTiers.RUBY,8,2,
+            ()-> new SlowingSwordItem(ModToolTiers.RUBY,8,2,
                     new SwordItem.Properties()));
     public static final RegistryObject<Item> RUBY_PICKAXE=ITEMS.register("ruby_pickaxe",
             ()-> new PickaxeItem(ModToolTiers.RUBY,2,2,
@@ -59,10 +60,13 @@ public class ModItems {
             ()-> new HoeItem(ModToolTiers.RUBY,0,0,
                     new Item.Properties()));
     public static final RegistryObject<Item> RUBY_HAMMER=ITEMS.register("ruby_hammer",
-            ()-> new HammerItem(ModToolTiers.RUBY,2,3,
+            ()-> new HammerItem(ModToolTiers.RUBY,3,-3,
                     new Item.Properties()));
     public static final RegistryObject<Item> RUBY_FIELD_SHOVEL=ITEMS.register("ruby_field_shovel",
-            ()-> new FieldShovelItem(ModToolTiers.RUBY,2,3,
+            ()-> new FieldShovelItem(ModToolTiers.RUBY,-2,-3,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_PAXEL=ITEMS.register("ruby_paxel",
+            ()-> new PaxelItem(ModToolTiers.RUBY,2,-3,
                     new Item.Properties()));
 
 
@@ -78,6 +82,8 @@ public class ModItems {
             ()-> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS,new Item.Properties()));
     public static final RegistryObject<Item> RUBY_BOOTS=ITEMS.register("ruby_boots",
             ()-> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS,new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_HORSE_ARMOR=ITEMS.register("ruby_horse_armor",
+            ()-> new HorseArmorItem(12,new ResourceLocation(TutorialMod.MOD_ID,"textures/entity/horse/armor/horse_armor_ruby.png"),new Item.Properties()));
 
 
 
