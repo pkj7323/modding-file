@@ -117,6 +117,11 @@ public class ModItems {
         ()->new ForgeSpawnEggItem(ModEntities.RHINO,0x7e9680,0xc5d1c5,
                 new Item.Properties()));
 
+    public static final RegistryObject<Item> DATA_TABLET=ITEMS.register("data_tablet",
+            ()-> new DataTabletItem(new Item.Properties().stacksTo(1)));
+
+
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

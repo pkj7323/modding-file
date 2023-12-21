@@ -1,9 +1,10 @@
 package net.park.tutorialmod.items.custom;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -13,58 +14,83 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.park.tutorialmod.items.ModItems;
+import net.park.tutorialmod.util.InventoryUtil;
 import net.park.tutorialmod.util.ModTags;
-import net.park.tutorialmod.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
 
-public class MetalDetectoritem extends Item{
-    public MetalDetectoritem(Properties pProperties){
-       super(pProperties);
+public class MetalDetectoritem extends Item {
+    public MetalDetectoritem(Properties pProperties) {
+        super(pProperties);
     }
+
     @Override
-    public InteractionResult useOn(UseOnContext pContext){
-        if(!pContext.getLevel().isClientSide()){
+    public InteractionResult useOn(UseOnContext pContext) {
+        if(!pContext.getLevel().isClientSide()) {
             BlockPos positionClicked = pContext.getClickedPos();
             Player player = pContext.getPlayer();
-            boolean foundBlock=false;
+            boolean foundBlock = false;
 
-            for(int i=0;i<=positionClicked.getY()+64;i++){
-                BlockState state=pContext.getLevel().getBlockState(positionClicked.below(i));
-                if(isValidBlock(state)){
-                    outputValuableCoordinates(positionClicked.below(i),player,state.getBlock());
-                    foundBlock =true;
+            for(int i = 0; i <= positionClicked.getY() + 64; i++) {
+                BlockState blockState = pContext.getLevel().getBlockState(positionClicked.below(i));
 
-                    pContext.getLevel().playSeededSound(null,positionClicked.getX(),positionClicked.getY(),positionClicked.getZ(),
-                            ModSounds.METAL_DETECTOR_FOUND_ORE.get(), SoundSource.BLOCKS,1f,1f,0);
+                if(isValuableBlock(blockState)) {
+                    outputValuableCoordinates(positionClicked.below(i), player, blockState.getBlock());
+                    foundBlock = true;
+
+                    if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())) {
+                        addDataToDataTablet(player, positionClicked.below(i), blockState.getBlock());
+                    }
+
                     break;
                 }
             }
-            if(!foundBlock){
-                player.sendSystemMessage(Component.literal("No Values Found!"));
+
+            if(!foundBlock) {
+                outputNoValuableFound(player);
             }
         }
-        pContext.getItemInHand().hurtAndBreak(1,pContext.getPlayer(),
+
+        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(),
                 player -> player.broadcastBreakEvent(player.getUsedItemHand()));
+
         return InteractionResult.SUCCESS;
+    }
+
+    private void addDataToDataTablet(Player player, BlockPos below, Block block) {
+        ItemStack dataTablet = player.getInventory().getItem(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET.get()));
+
+        CompoundTag data = new CompoundTag();
+        data.putString("tutorialmod.found_ore","Valuable Found: " + I18n.get(block.getDescriptionId())
+                + " at (" + below.getX() + ", " + below.getY() + ", " + below.getZ() + ")");
+
+        dataTablet.setTag(data);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tootips.tutorialmod.metal_detector.tooltip"));
-        //이방법은 각각의 언어마다 툴팁을 적을 수 있으므로 가장 추천하는 방법이나 귀찮음
+        if(Screen.hasShiftDown()) {
+            pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.metal_detector.tooltip.shift"));
+        } else {
+            pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.metal_detector.tooltip"));
+        }
+
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 
-    private void outputValuableCoordinates(BlockPos blockPos, Player player, Block block){
-        player.sendSystemMessage(Component.literal("Found"+ I18n.get(block.getDescriptionId())
-                +" at "+"("+blockPos.getX()+","+blockPos.getY()+","+blockPos.getZ()+")"));
+    private void outputNoValuableFound(Player player) {
+        player.sendSystemMessage(Component.translatable("item.tutorialmod.metal_detector.no_valuables"));
     }
 
-    private boolean isValidBlock(BlockState state){
+    private void outputValuableCoordinates(BlockPos below, Player player, Block block) {
+        player.sendSystemMessage(Component.literal("Valuable Found: " + I18n.get(block.getDescriptionId())
+                + " at (" + below.getX() + ", " + below.getY() + ", " + below.getZ() + ")"));
+    }
 
-        return state.is(ModTags.Blocks.METAL_DETECTOR_VALUES);
+    private boolean isValuableBlock(BlockState blockState) {
+        return blockState.is(ModTags.Blocks.METAL_DETECTOR_VALUES);
     }
 }

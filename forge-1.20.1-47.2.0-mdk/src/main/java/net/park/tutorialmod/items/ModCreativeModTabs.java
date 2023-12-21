@@ -113,6 +113,15 @@ public class ModCreativeModTabs {
 
 
 
+
+
+
+
+                        pOutput.accept(ModItems.DATA_TABLET.get());
+
+
+
+
                     })
                     .build());
 

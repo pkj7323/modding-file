@@ -33,7 +33,7 @@ public class SoundBlock extends Block {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        pTooltip.add(Component.literal("Make sweet sounds when right-clicked!"));
+        pTooltip.add(Component.translatable("tooltip.tutorialmod.sound_block"));
         //이방법은 아예 문자를 박는것이기때문에 번역 할때 힘들어짐
         super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }

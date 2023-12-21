@@ -44,6 +44,9 @@
   "item.tutorialmod.pine_cone": "pine_cone",
 
 
+  "item.tutorialmod.data_tablet": "data Tablet",
+
+
 
   "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.raw_ruby_block": "Block of Raw_Ruby",
@@ -99,5 +102,11 @@
   "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Jingle",
   "entity.minecraft.villager.tutorialmod.soundmaster": "Sound Master",
 
-  "creativetab.tutorial_tab": "ruby tutorial Tab"
+  "creativetab.tutorial_tab": "ruby tutorial Tab",
+  "item.tutorialmod.metal_detector.no_valuables": "NO Valuables Found!",
+
+
+  "tooltip.tutorialmod.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
+  "tooltip.tutorialmod.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
+  "tooltip.tutorialmod.sound_block": "Plays nice sounds when walking or right-clicking."
 }

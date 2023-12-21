@@ -1,6 +1,5 @@
 package net.park.tutorialmod.datagen;
 
-import net.minecraftforge.fml.common.Mod;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.items.ModItems;
@@ -23,7 +22,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.LinkedHashMap;
 
 public class ModItemModelProvider extends ItemModelProvider {
-    private static LinkedHashMap<ResourceKey<TrimMaterial>,Float>trimMaterials=new LinkedHashMap<>();
+    private static final LinkedHashMap<ResourceKey<TrimMaterial>,Float>trimMaterials=new LinkedHashMap<>();
     static {
         trimMaterials.put(TrimMaterials.QUARTZ,0.1F);
         trimMaterials.put(TrimMaterials.IRON,0.2F);
@@ -59,7 +58,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BAR_BRAWL_MUISIC_DISC);
         simpleItem(ModItems.SAKURAMITSUTSUKI_MUSIC_DISC);
 
+
         simpleItem(ModItems.RUBY_HORSE_ARMOR);
+
+
+        simpleItem(ModItems.DATA_TABLET);
+
 
 
 
