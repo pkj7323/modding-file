@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-22T16:31:01.6528405	Block States: tutorialmod
+// 1.20.1	2023-12-21T20:30:18.5376285	Block States: tutorialmod
 4f6f6f43eb03fe4d9e5ce223f245812e0d7eae93 assets/tutorialmod/blockstates/catmint.json
 d537bf85846bd7eeffa314408c867cc1a7d531d5 assets/tutorialmod/blockstates/corn_crop.json
 227887ba16919b1cedc0c4188b78790643c2d62e assets/tutorialmod/blockstates/deepslate_ruby_ore.json
@@ -16,6 +16,7 @@ a8b0e15237f19e81c6da63b29b4f094fb26c8dc3 assets/tutorialmod/blockstates/ruby_but
 ab6d5bb86c6522fa3c42035f2a988d0cad069186 assets/tutorialmod/blockstates/ruby_door.json
 4d31120ef8b397b8393ad8200c1addca335dcb2b assets/tutorialmod/blockstates/ruby_fence.json
 e07968e366945b5e5d6b0efc614f6d80bdd9a77a assets/tutorialmod/blockstates/ruby_fence_gate.json
+9b42a0f3b81af355eb8bf21cec2dd0b1a245a71f assets/tutorialmod/blockstates/ruby_lamp.json
 1e28efa60d451a0277c0e06152dd9c47e3e73701 assets/tutorialmod/blockstates/ruby_ore.json
 74dd3aa76a0cede507cba07afd06770704b2f477 assets/tutorialmod/blockstates/ruby_pressure_plate.json
 69472e92e856588e8091eb6e44129489e646c19e assets/tutorialmod/blockstates/ruby_slab.json
@@ -64,6 +65,8 @@ ce40c7f2f6c974fee61e3a348d0ece934498eba6 assets/tutorialmod/models/block/ruby_fe
 eda40d759fe364655011dcece6a5e8d31d2360bb assets/tutorialmod/models/block/ruby_fence_gate_wall_open.json
 4c44e18e068a091e7c49c847cc81e49d6d5ff2f4 assets/tutorialmod/models/block/ruby_fence_post.json
 2f7aa7c65ec46676e3fa73faa9031b0ff0fd7d5b assets/tutorialmod/models/block/ruby_fence_side.json
+39fe565b2a470f6dd9e4ff4bbe4bde07a98fc651 assets/tutorialmod/models/block/ruby_lamp_off.json
+935f3ae4437a511bf0f97cdf16a4ed30cbda7ee7 assets/tutorialmod/models/block/ruby_lamp_on.json
 eb1fa20950fba3a8d7186dc327c1ffb0dfce79b6 assets/tutorialmod/models/block/ruby_ore.json
 05f4e35e2dae88c1fb1c452d4c47ed12931e0ee8 assets/tutorialmod/models/block/ruby_pressure_plate.json
 c814633148ab07a7934cdcd61f8a0792607a45b4 assets/tutorialmod/models/block/ruby_pressure_plate_down.json
@@ -101,6 +104,7 @@ f8a200f45709b5a3e854d5d6885a848e58c7a355 assets/tutorialmod/models/item/pine_log
 1a7f76b967a6270a0443871f08ca1a655740a97d assets/tutorialmod/models/item/potted_catmint.json
 fdfadf4fbed71a5d0dee8237f61cf4a05d5b93d4 assets/tutorialmod/models/item/raw_ruby_block.json
 a3afdbdc2d5bc2b6615dfde9596d1eeeb3dc4564 assets/tutorialmod/models/item/ruby_block.json
+d5e31c33879448150327fc45bf4469ab44ed1f72 assets/tutorialmod/models/item/ruby_lamp.json
 f8363c61ac5c853aefbed155e9fe21d00ab5b177 assets/tutorialmod/models/item/ruby_ore.json
 e1bcffd5dcbfb758a3668455d04d23c6efda02cf assets/tutorialmod/models/item/sound_block.json
 ca27487cce3f5da1b4ea2be229b9505558ddedb1 assets/tutorialmod/models/item/stripped_pine_log.json

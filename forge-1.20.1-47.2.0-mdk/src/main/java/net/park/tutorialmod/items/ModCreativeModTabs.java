@@ -4,15 +4,13 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
 
-import java.rmi.registry.Registry;
+
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS=
@@ -77,6 +75,7 @@ public class ModCreativeModTabs {
                         
                         //기능이 들어간 블럭
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+                        pOutput.accept(ModBlocks.RUBY_LAMP.get());
 
                         //음식
                         //작물블럭

@@ -13,6 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.block.custom.CornCropBlock;
+import net.park.tutorialmod.block.custom.RubyLampBlock;
 import net.park.tutorialmod.block.custom.StrawberryCropBlock;
 
 import java.util.function.Function;
@@ -79,7 +80,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PINE_PLANKS);
 
         levesBlock(ModBlocks.PINE_LEAVES);
-
+        customLamp();
     }
     private void levesBlock(RegistryObject<Block> blockRegistryObject){
         simpleBlockWithItem(blockRegistryObject.get(),
@@ -113,5 +114,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(TutorialMod.MOD_ID, "block/" + textureName + state.getValue(((CornCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
+    }
+    private void customLamp(){
+        getVariantBuilder(ModBlocks.RUBY_LAMP.get()).forAllStates(state ->{
+            if (state.getValue(RubyLampBlock.CLICKED)){
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("ruby_lamp_on",
+                        new ResourceLocation(TutorialMod.MOD_ID,"block/"+"ruby_lamp_off")))};
+            }else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("ruby_lamp_off",
+                        new ResourceLocation(TutorialMod.MOD_ID,"block/"+"ruby_lamp_off")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.RUBY_LAMP.get(), models().cubeAll("ruby_lamp_on",
+                new ResourceLocation(TutorialMod.MOD_ID,"block/"+"ruby_lamp_on")));
     }
 }

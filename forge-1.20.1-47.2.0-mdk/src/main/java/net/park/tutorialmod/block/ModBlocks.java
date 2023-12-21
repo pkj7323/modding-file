@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -99,6 +100,12 @@ public class ModBlocks {
             ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3f)));
     public static final RegistryObject<Block> STRIPPED_PINE_WOOD=registerBlock("stripped_pine_wood",
             ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
+
+
+
+    public static final RegistryObject<Block> RUBY_LAMP=registerBlock("ruby_lamp",
+            ()->new RubyLampBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).sound(SoundType.GLASS)
+                    .lightLevel(state->state.getValue(RubyLampBlock.CLICKED)? 15:0)));
 
     public static final RegistryObject<Block> PINE_PLANKS=registerBlock("pine_planks",
             ()->new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){

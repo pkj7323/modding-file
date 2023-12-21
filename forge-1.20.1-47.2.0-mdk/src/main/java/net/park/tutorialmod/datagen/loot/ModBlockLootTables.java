@@ -1,22 +1,13 @@
 package net.park.tutorialmod.datagen.loot;
 
-import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
@@ -28,7 +19,6 @@ import net.park.tutorialmod.block.custom.CornCropBlock;
 import net.park.tutorialmod.block.custom.StrawberryCropBlock;
 import net.park.tutorialmod.items.ModItems;
 
-import java.util.List;
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
@@ -58,6 +48,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PINE_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_PINE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_PINE_WOOD.get());
+        this.dropSelf(ModBlocks.RUBY_LAMP.get());
 
         this.add(ModBlocks.PINE_LEAVES.get(), block ->
                 createLeavesDrops(block,ModBlocks.RUBY_BLOCK.get(),NORMAL_LEAVES_SAPLING_CHANCES));
