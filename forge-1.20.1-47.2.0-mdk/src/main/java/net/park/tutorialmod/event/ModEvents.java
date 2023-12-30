@@ -13,13 +13,18 @@ import net.minecraft.world.item.enchantment.EnchantmentInstance;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.event.RegisterCommandsEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.server.command.ConfigCommand;
 import net.park.tutorialmod.TutorialMod;
 import net.park.tutorialmod.block.ModBlocks;
+import net.park.tutorialmod.command.ReturnHomeCommand;
+import net.park.tutorialmod.command.SetHomeCommand;
 import net.park.tutorialmod.items.ModItems;
 import net.park.tutorialmod.items.custom.FieldShovelItem;
 import net.park.tutorialmod.items.custom.HammerItem;
@@ -32,6 +37,21 @@ import java.util.Set;
 @Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID)
 public class ModEvents {
     private static final Set<BlockPos> HARVESTED_BLOCKS=new HashSet<>();
+
+
+
+
+    @SubscribeEvent
+    public static void onCommandsRegister(RegisterCommandsEvent event){
+        new SetHomeCommand(event.getDispatcher());
+        new ReturnHomeCommand(event.getDispatcher());
+        ConfigCommand.register(event.getDispatcher());
+    }
+    @SubscribeEvent
+    public static void onPlayerCloned(PlayerEvent.Clone event){
+        event.getEntity().getPersistentData().putIntArray("tutorialmod.homepos",
+                event.getOriginal().getPersistentData().getIntArray("tutorialmod.homepos"));
+    }
     @SubscribeEvent
     public static void onHammerUasge(BlockEvent.BreakEvent event){
         Player player =event.getPlayer();

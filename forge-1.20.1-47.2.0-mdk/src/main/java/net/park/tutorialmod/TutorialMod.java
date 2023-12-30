@@ -1,9 +1,7 @@
 package net.park.tutorialmod;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -18,13 +16,13 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.block.entity.ModBlockEntities;
 import net.park.tutorialmod.enchantment.ModEnchantments;
 import net.park.tutorialmod.entity.ModEntities;
 import net.park.tutorialmod.entity.client.RhinoRenderer;
 import net.park.tutorialmod.items.ModCreativeModTabs;
+import net.park.tutorialmod.items.ModItemProperties;
 import net.park.tutorialmod.items.ModItems;
 import net.park.tutorialmod.loot.ModLootModifiers;
 import net.park.tutorialmod.recipe.ModRecipes;
@@ -75,9 +73,7 @@ public class TutorialMod
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(()->{
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CATMINT.getId(),ModBlocks.POTTED_CATMINT);
-        });
+        event.enqueueWork(()-> ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CATMINT.getId(),ModBlocks.POTTED_CATMINT));
     }
 
     // Add the example block item to the building blocks tab
@@ -103,7 +99,7 @@ public class TutorialMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
-
+            event.enqueueWork(()-> ModItemProperties.addCustomItemProperties());
             MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
         }
     }

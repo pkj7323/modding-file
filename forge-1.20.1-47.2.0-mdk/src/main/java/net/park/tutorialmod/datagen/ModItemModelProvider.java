@@ -62,7 +62,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RUBY_HORSE_ARMOR);
 
 
-        simpleItem(ModItems.DATA_TABLET);
+       //simpleItem(ModItems.DATA_TABLET);
 
 
 
