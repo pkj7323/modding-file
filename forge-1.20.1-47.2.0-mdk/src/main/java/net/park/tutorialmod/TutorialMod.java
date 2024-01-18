@@ -25,6 +25,7 @@ import net.park.tutorialmod.items.ModCreativeModTabs;
 import net.park.tutorialmod.items.ModItemProperties;
 import net.park.tutorialmod.items.ModItems;
 import net.park.tutorialmod.loot.ModLootModifiers;
+import net.park.tutorialmod.painting.ModPainting;
 import net.park.tutorialmod.recipe.ModRecipes;
 import net.park.tutorialmod.screen.GemPolishingStationScreen;
 import net.park.tutorialmod.screen.ModMenuTypes;
@@ -58,6 +59,7 @@ public class TutorialMod
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
+        ModPainting.register(modEventBus);
 
         ModVillagers.register(modEventBus);
         ModLootModifiers.register(modEventBus);

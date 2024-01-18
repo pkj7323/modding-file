@@ -14,7 +14,7 @@ import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
-public class AddItemModifier extends LootModifier {
+public class  AddItemModifier extends LootModifier {
     /**
      * Constructs a LootModifier.
      *
