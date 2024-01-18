@@ -37,6 +37,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RUBY_FIELD_SHOVEL.get());
                         pOutput.accept(ModItems.RUBY_PAXEL.get());
                         pOutput.accept(ModItems.RUBY_BOW.get());
+                        pOutput.accept(ModItems.RUBY_SHIELD.get());
 
 
 

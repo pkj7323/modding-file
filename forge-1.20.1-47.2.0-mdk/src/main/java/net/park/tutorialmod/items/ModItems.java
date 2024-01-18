@@ -70,6 +70,8 @@ public class ModItems {
             ()-> new Item(new Item.Properties().durability(1024)));
     public static final RegistryObject<Item> RUBY_BOW=ITEMS.register("ruby_bow",
             ()-> new BowItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> RUBY_SHIELD=ITEMS.register("ruby_shield",
+            ()-> new ShieldItem(new Item.Properties().durability(500)));
 
 
 

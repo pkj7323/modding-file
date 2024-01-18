@@ -3,12 +3,16 @@ package net.park.tutorialmod.items;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.park.tutorialmod.TutorialMod;
 
 public class ModItemProperties {
     public static void addCustomItemProperties(){
         ItemProperties.register(ModItems.DATA_TABLET.get(),new ResourceLocation(TutorialMod.MOD_ID,"on"),
                 (pStack, pLevel, pEntity, pSeed) -> pStack.hasTag() ? 1f : 0f);
+        ItemProperties.register(ModItems.RUBY_SHIELD.get(), new ResourceLocation("blocking"), (p_174575_, p_174576_, p_174577_, p_174578_) -> {
+            return p_174577_ != null && p_174577_.isUsingItem() && p_174577_.getUseItem() == p_174575_ ? 1.0F : 0.0F;
+        });
 
         makeBow(ModItems.RUBY_BOW.get());
     }
