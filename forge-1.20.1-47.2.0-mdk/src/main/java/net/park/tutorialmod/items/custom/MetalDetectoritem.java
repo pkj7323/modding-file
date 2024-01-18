@@ -5,6 +5,7 @@ import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.park.tutorialmod.items.ModItems;
+import net.park.tutorialmod.sound.ModSounds;
 import net.park.tutorialmod.util.InventoryUtil;
 import net.park.tutorialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
@@ -45,6 +47,8 @@ public class MetalDetectoritem extends Item {
                         addDataToDataTablet(player, positionClicked.below(i), blockState.getBlock());
                     }
 
+                    pContext.getLevel().playSeededSound(null,player.getX(),player.getY(),player.getZ(),
+                            ModSounds.METAL_DETECTOR_FOUND_ORE.get(), SoundSource.BLOCKS,1f,1f,0);
                     break;
                 }
             }

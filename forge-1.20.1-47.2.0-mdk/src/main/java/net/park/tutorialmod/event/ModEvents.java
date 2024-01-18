@@ -3,6 +3,8 @@ package net.park.tutorialmod.event;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
@@ -14,6 +16,7 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.event.RegisterCommandsEvent;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
@@ -37,6 +40,7 @@ import java.util.Set;
 @Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID)
 public class ModEvents {
     private static final Set<BlockPos> HARVESTED_BLOCKS=new HashSet<>();
+
 
 
 
@@ -188,6 +192,21 @@ public class ModEvents {
                 10,2,0.2f));
 
     }
+    @SubscribeEvent
+    public static void LivingDamge(LivingDamageEvent event){
+        if(event.getEntity() instanceof Sheep) {
+            if(event.getSource().getDirectEntity() instanceof Player player) {
+                if (player.getItemInHand(InteractionHand.MAIN_HAND).getItem() == ModItems.RUBY.get()) {
+                    TutorialMod.LOGGER.info("Sheep was hit with ruby by " + player.getName().getString());
+                } else if (player.getItemInHand(InteractionHand.MAIN_HAND).getItem() == Items.DIAMOND) {
+                    TutorialMod.LOGGER.info("Sheep was hit with DIAMOND by " + player.getName().getString());
+                } else {
+                    TutorialMod.LOGGER.info("Sheep was hit with something else by " + player.getName().getString());
+                }
+            }
+        }
+    }
+
 
 
 }
