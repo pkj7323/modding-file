@@ -2,9 +2,7 @@ package net.park.tutorialmod.items;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeSpawnEggItem;
-import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -68,7 +66,10 @@ public class ModItems {
     public static final RegistryObject<Item> RUBY_PAXEL=ITEMS.register("ruby_paxel",
             ()-> new PaxelItem(ModToolTiers.RUBY,2,-3,
                     new Item.Properties()));
-
+    public static final RegistryObject<Item> RADIATION_STAFF=ITEMS.register("radiation_staff",
+            ()-> new Item(new Item.Properties().durability(1024)));
+    public static final RegistryObject<Item> RUBY_BOW=ITEMS.register("ruby_bow",
+            ()-> new BowItem(new Item.Properties().durability(500)));
 
 
 
