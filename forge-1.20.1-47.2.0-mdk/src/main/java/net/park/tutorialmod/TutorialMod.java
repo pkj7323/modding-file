@@ -16,6 +16,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.park.effect.ModEffects;
 import net.park.tutorialmod.block.ModBlocks;
 import net.park.tutorialmod.block.entity.ModBlockEntities;
 import net.park.tutorialmod.enchantment.ModEnchantments;
@@ -66,6 +67,7 @@ public class TutorialMod
 
         ModEnchantments.register(modEventBus);
 
+        ModEffects.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

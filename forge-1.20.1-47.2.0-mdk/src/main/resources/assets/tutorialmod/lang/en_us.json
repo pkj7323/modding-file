@@ -78,6 +78,16 @@
 
 
 
+  "painting.tutorialmod.sample.title": "sample",
+  "painting.tutorialmod.sample.author": "me",
+
+
+  "painting.tutorialmod.world.title": "World",
+  "painting.tutorialmod.world.author": "NanoAttack",
+  "painting.tutorialmod.shrimp.title": "Shrimp",
+  "painting.tutorialmod.shrimp.author": "NanoAttack",
+  "painting.tutorialmod.saw_them.title": "Saw Them",
+  "painting.tutorialmod.saw_them.author": "NanoAttack",
 
 
 
@@ -108,20 +118,32 @@
   "creativetab.tutorial_tab": "ruby tutorial Tab",
   "item.tutorialmod.metal_detector.no_valuables": "NO Valuables Found!",
 
+  "effect.tutorialmod.slimey": "Slimey",
+
+
+
+
 
   "tooltip.tutorialmod.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
   "tooltip.tutorialmod.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
-  "tooltip.tutorialmod.sound_block": "Plays nice sounds when walking or right-clicking.",
+  "tooltip.tutorialmod.sound_block": "Plays nice sounds when walking or right-clicking."
 
-  "painting.tutorialmod.sample.title": "sample",
-  "painting.tutorialmod.sample.author": "me",
 
-  "painting.tutorialmod.world.title": "World",
-  "painting.tutorialmod.world.author": "NanoAttack",
-  "painting.tutorialmod.shrimp.title": "Shrimp",
-  "painting.tutorialmod.shrimp.author": "NanoAttack",
-  "painting.tutorialmod.saw_them.title": "Saw Them",
-  "painting.tutorialmod.saw_them.author": "NanoAttack"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
